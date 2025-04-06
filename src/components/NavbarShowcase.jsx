@@ -955,16 +955,17 @@ const NavbarShowcase = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <header className="flex flex-col sm:flex-row justify-between items-center mb-10">
-          <h1 className="text-4xl font-bold mb-4 sm:mb-0">Navbar Showcase</h1>
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500"
+          >
+            Navbar Showcase
+          </motion.h1>
           <div className="flex items-center space-x-4">
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-xl"
-            >
-              {darkMode ? <FiSun /> : <FiMoon />}
-            </button>
             <div className="relative">
-              <FiSearch className="absolute top-2 left-3 text-gray-400" />
+              <FiSearch className="absolute top-3 left-3  text-gray-400" />
               <input
                 type="text"
                 placeholder="Search navbars..."
@@ -980,7 +981,7 @@ const NavbarShowcase = () => {
         {filteredCategories.map((category, catIdx) => (
           <section key={catIdx} className="mb-12">
             <h2 className="text-3xl font-semibold mb-6">{category.title}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
               {category.navbars.map((navbar, idx) => (
                 <motion.div
                   key={idx}

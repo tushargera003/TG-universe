@@ -7,8 +7,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Left Section */}
         <div className="text-center md:text-left">
-          <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-            TG UNIVERSE
+          <h3 className="text-lg font-semibold dark:text-white">
+            <span className=" text-white bg-gradient-to-r from-slate-700 via-purple-500 to-pink-500">
+              TG UNIVERSE
+            </span>
           </h3>
           <p className="text-lg">Built with ❤️ by Tushar Gera</p>
         </div>

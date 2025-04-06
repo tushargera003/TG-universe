@@ -17,6 +17,7 @@ const Header = () => {
     { name: "Buttons", path: "/button" },
     { name: "Cards", path: "/card" },
     { name: "Cart", path: "/cart" },
+    { name: "Chat Bubble", path: "/chat" },
     { name: "Modals", path: "/modals" },
     { name: "Toast", path: "/toast" },
     { name: "Spinner", path: "/spinner" },
@@ -25,6 +26,10 @@ const Header = () => {
     { name: "Carousel", path: "/carousel" },
     { name: "Breadcrumbs", path: "/breadcrumbs" },
     { name: "Pagination", path: "/pagingation" },
+    { name: "About Us", path: "/aboutus" },
+    { name: "Login/Signup", path: "/auth" },
+    { name: "Skeleton", path: "/skeleton" },
+    { name: "Header/Footer", path: "/header-footer" },
   ];
 
   const toggleDarkMode = () => {

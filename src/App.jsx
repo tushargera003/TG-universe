@@ -17,6 +17,11 @@ import ModalShowcase from "./components/ModalShowcase";
 import CartShowcase from "./components/CartShowcase";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import AboutUsShowcase from "./components/AboutUsShowcase";
+import AuthPageShowcase from "./components/AuthPageShowcase";
+import SkeletonShowcase from "./components/SkeletonShowcase";
+import ChatBubbleShowcase from "./components/ChatBubbleShowcase";
+import HeaderFooterShowcase from "./components/HeaderFooterShowcase";
 const App = () => {
   return (
     <>
@@ -24,6 +29,15 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route
+            path="/header-footer"
+            element={<HeaderFooterShowcase />}
+          ></Route>
+
+          <Route path="/chat" element={<ChatBubbleShowcase />}></Route>
+          <Route path="/skeleton" element={<SkeletonShowcase />}></Route>
+          <Route path="/auth" element={<AuthPageShowcase />}></Route>
+          <Route path="/aboutus" element={<AboutUsShowcase />}></Route>
           <Route path="/hero" element={<HeroShowcase />}></Route>
           <Route path="/cart" element={<CartShowcase />}></Route>
           <Route path="/modals" element={<ModalShowcase />}></Route>

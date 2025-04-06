@@ -340,153 +340,153 @@ const CartShowcase = () => {
           ),
         },
         // Continue adding more cart designs...
-        {
-          name: "Sidebar Cart",
-          code: `<div className="w-80 bg-white dark:bg-gray-800 h-screen fixed right-0 top-0 shadow-xl flex flex-col">
-  <div className="p-6 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center">
-    <h3 className="text-xl font-bold">Your Cart (2)</h3>
-    <button className="text-gray-500 hover:text-black dark:hover:text-white">
-      <FiX size={20} />
-    </button>
-  </div>
-  <div className="flex-1 overflow-y-auto p-6">
-    <div className="flex items-start space-x-4 pb-4 mb-4">
-      <img 
-        src="https://picsum.photos/200/300?random=5?random=2" 
-        alt="Product" 
-        className="w-20 h-20 object-cover rounded"
-      />
-      <div className="flex-1">
-        <div className="flex justify-between">
-          <h4 className="font-medium">Wireless Charger</h4>
-          <span className="font-semibold">$29.99</span>
-        </div>
-        <p className="text-gray-500 text-sm mt-1">Fast charging</p>
-        <div className="flex items-center space-x-3 mt-3">
-          <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
-            <FiMinus size={14} />
-          </button>
-          <span>1</span>
-          <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
-            <FiPlus size={14} />
-          </button>
-        </div>
-      </div>
-    </div>
-    <div className="flex items-start space-x-4 pb-4 mb-4">
-      <img 
-        src="https://picsum.photos/200/300?random=5?random=2" 
-        alt="Product" 
-        className="w-20 h-20 object-cover rounded"
-      />
-      <div className="flex-1">
-        <div className="flex justify-between">
-          <h4 className="font-medium">Phone Case</h4>
-          <span className="font-semibold">$19.99</span>
-        </div>
-        <p className="text-gray-500 text-sm mt-1">Black, Slim fit</p>
-        <div className="flex items-center space-x-3 mt-3">
-          <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
-            <FiMinus size={14} />
-          </button>
-          <span>1</span>
-          <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
-            <FiPlus size={14} />
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="p-6 border-t border-gray-100 dark:border-gray-700">
-    <div className="flex justify-between mb-4">
-      <span>Subtotal</span>
-      <span>$49.98</span>
-    </div>
-    <button className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 font-medium">
-      Checkout
-    </button>
-    <p className="text-center text-sm text-gray-500 mt-3">
-      or <button className="text-blue-500 hover:underline">Continue Shopping</button>
-    </p>
-  </div>
-</div>`,
-          component: (
-            <div className="w-80 bg-white dark:bg-gray-800 h-screen fixed right-0 top-0 shadow-xl flex flex-col">
-              <div className="p-6 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center">
-                <h3 className="text-xl font-bold">Your Cart (2)</h3>
-                <button className="text-gray-500 hover:text-black dark:hover:text-white">
-                  <FiX size={20} />
-                </button>
-              </div>
-              <div className="flex-1 overflow-y-auto p-6">
-                <div className="flex items-start space-x-4 pb-4 mb-4">
-                  <img
-                    src="https://picsum.photos/200/300?random=5?random=2"
-                    alt="Product"
-                    className="w-20 h-20 object-cover rounded"
-                  />
-                  <div className="flex-1">
-                    <div className="flex justify-between">
-                      <h4 className="font-medium">Wireless Charger</h4>
-                      <span className="font-semibold">$29.99</span>
-                    </div>
-                    <p className="text-gray-500 text-sm mt-1">Fast charging</p>
-                    <div className="flex items-center space-x-3 mt-3">
-                      <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <FiMinus size={14} />
-                      </button>
-                      <span>1</span>
-                      <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <FiPlus size={14} />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4 pb-4 mb-4">
-                  <img
-                    src="https://picsum.photos/200/300?random=5?random=1"
-                    alt="Product"
-                    className="w-20 h-20 object-cover rounded"
-                  />
-                  <div className="flex-1">
-                    <div className="flex justify-between">
-                      <h4 className="font-medium">Phone Case</h4>
-                      <span className="font-semibold">$19.99</span>
-                    </div>
-                    <p className="text-gray-500 text-sm mt-1">
-                      Black, Slim fit
-                    </p>
-                    <div className="flex items-center space-x-3 mt-3">
-                      <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <FiMinus size={14} />
-                      </button>
-                      <span>1</span>
-                      <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <FiPlus size={14} />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6 border-t border-gray-100 dark:border-gray-700">
-                <div className="flex justify-between mb-4">
-                  <span>Subtotal</span>
-                  <span>$49.98</span>
-                </div>
-                <button className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 font-medium">
-                  Checkout
-                </button>
-                <p className="text-center text-sm text-gray-500 mt-3">
-                  or{" "}
-                  <button className="text-blue-500 hover:underline">
-                    Continue Shopping
-                  </button>
-                </p>
-              </div>
-            </div>
-          ),
-        },
-        // Add more cart designs until you reach 50...
+        //         {
+        //           name: "Sidebar Cart",
+        //           code: `<div className="w-80 bg-white dark:bg-gray-800 h-screen fixed right-0 top-0 shadow-xl flex flex-col">
+        //   <div className="p-6 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center">
+        //     <h3 className="text-xl font-bold">Your Cart (2)</h3>
+        //     <button className="text-gray-500 hover:text-black dark:hover:text-white">
+        //       <FiX size={20} />
+        //     </button>
+        //   </div>
+        //   <div className="flex-1 overflow-y-auto p-6">
+        //     <div className="flex items-start space-x-4 pb-4 mb-4">
+        //       <img
+        //         src="https://picsum.photos/200/300?random=5?random=2"
+        //         alt="Product"
+        //         className="w-20 h-20 object-cover rounded"
+        //       />
+        //       <div className="flex-1">
+        //         <div className="flex justify-between">
+        //           <h4 className="font-medium">Wireless Charger</h4>
+        //           <span className="font-semibold">$29.99</span>
+        //         </div>
+        //         <p className="text-gray-500 text-sm mt-1">Fast charging</p>
+        //         <div className="flex items-center space-x-3 mt-3">
+        //           <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        //             <FiMinus size={14} />
+        //           </button>
+        //           <span>1</span>
+        //           <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        //             <FiPlus size={14} />
+        //           </button>
+        //         </div>
+        //       </div>
+        //     </div>
+        //     <div className="flex items-start space-x-4 pb-4 mb-4">
+        //       <img
+        //         src="https://picsum.photos/200/300?random=5?random=2"
+        //         alt="Product"
+        //         className="w-20 h-20 object-cover rounded"
+        //       />
+        //       <div className="flex-1">
+        //         <div className="flex justify-between">
+        //           <h4 className="font-medium">Phone Case</h4>
+        //           <span className="font-semibold">$19.99</span>
+        //         </div>
+        //         <p className="text-gray-500 text-sm mt-1">Black, Slim fit</p>
+        //         <div className="flex items-center space-x-3 mt-3">
+        //           <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        //             <FiMinus size={14} />
+        //           </button>
+        //           <span>1</span>
+        //           <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        //             <FiPlus size={14} />
+        //           </button>
+        //         </div>
+        //       </div>
+        //     </div>
+        //   </div>
+        //   <div className="p-6 border-t border-gray-100 dark:border-gray-700">
+        //     <div className="flex justify-between mb-4">
+        //       <span>Subtotal</span>
+        //       <span>$49.98</span>
+        //     </div>
+        //     <button className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 font-medium">
+        //       Checkout
+        //     </button>
+        //     <p className="text-center text-sm text-gray-500 mt-3">
+        //       or <button className="text-blue-500 hover:underline">Continue Shopping</button>
+        //     </p>
+        //   </div>
+        // </div>`,
+        //           component: (
+        //             <div className="w-80 bg-white dark:bg-gray-800 h-screen fixed right-0 top-0 shadow-xl flex flex-col">
+        //               <div className="p-6 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center">
+        //                 <h3 className="text-xl font-bold">Your Cart (2)</h3>
+        //                 <button className="text-gray-500 hover:text-black dark:hover:text-white">
+        //                   <FiX size={20} />
+        //                 </button>
+        //               </div>
+        //               <div className="flex-1 overflow-y-auto p-6">
+        //                 <div className="flex items-start space-x-4 pb-4 mb-4">
+        //                   <img
+        //                     src="https://picsum.photos/200/300?random=5?random=2"
+        //                     alt="Product"
+        //                     className="w-20 h-20 object-cover rounded"
+        //                   />
+        //                   <div className="flex-1">
+        //                     <div className="flex justify-between">
+        //                       <h4 className="font-medium">Wireless Charger</h4>
+        //                       <span className="font-semibold">$29.99</span>
+        //                     </div>
+        //                     <p className="text-gray-500 text-sm mt-1">Fast charging</p>
+        //                     <div className="flex items-center space-x-3 mt-3">
+        //                       <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        //                         <FiMinus size={14} />
+        //                       </button>
+        //                       <span>1</span>
+        //                       <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        //                         <FiPlus size={14} />
+        //                       </button>
+        //                     </div>
+        //                   </div>
+        //                 </div>
+        //                 <div className="flex items-start space-x-4 pb-4 mb-4">
+        //                   <img
+        //                     src="https://picsum.photos/200/300?random=5?random=1"
+        //                     alt="Product"
+        //                     className="w-20 h-20 object-cover rounded"
+        //                   />
+        //                   <div className="flex-1">
+        //                     <div className="flex justify-between">
+        //                       <h4 className="font-medium">Phone Case</h4>
+        //                       <span className="font-semibold">$19.99</span>
+        //                     </div>
+        //                     <p className="text-gray-500 text-sm mt-1">
+        //                       Black, Slim fit
+        //                     </p>
+        //                     <div className="flex items-center space-x-3 mt-3">
+        //                       <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        //                         <FiMinus size={14} />
+        //                       </button>
+        //                       <span>1</span>
+        //                       <button className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        //                         <FiPlus size={14} />
+        //                       </button>
+        //                     </div>
+        //                   </div>
+        //                 </div>
+        //               </div>
+        //               <div className="p-6 border-t border-gray-100 dark:border-gray-700">
+        //                 <div className="flex justify-between mb-4">
+        //                   <span>Subtotal</span>
+        //                   <span>$49.98</span>
+        //                 </div>
+        //                 <button className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 font-medium">
+        //                   Checkout
+        //                 </button>
+        //                 <p className="text-center text-sm text-gray-500 mt-3">
+        //                   or{" "}
+        //                   <button className="text-blue-500 hover:underline">
+        //                     Continue Shopping
+        //                   </button>
+        //                 </p>
+        //               </div>
+        //             </div>
+        //           ),
+        //         },
+        //         // Add more cart designs until you reach 50...
       ],
     },
     {
