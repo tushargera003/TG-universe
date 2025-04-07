@@ -22,6 +22,10 @@ import AuthPageShowcase from "./components/AuthPageShowcase";
 import SkeletonShowcase from "./components/SkeletonShowcase";
 import ChatBubbleShowcase from "./components/ChatBubbleShowcase";
 import HeaderFooterShowcase from "./components/HeaderFooterShowcase";
+import ContactShowcase from "./components/ContactShowcase";
+import ProductShowcase from "./components/ProductShowcase";
+import DashboardWidgetsShowcase from "./components/DashboardWidgetsShowcase";
+import InputShowcase from "./components/InputShowcase";
 const App = () => {
   return (
     <>
@@ -29,6 +33,10 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/inputs" element={<InputShowcase />}></Route>
+          <Route path="/widgets" element={<DashboardWidgetsShowcase />}></Route>
+          <Route path="/products" element={<ProductShowcase />}></Route>
+          <Route path="/contact" element={<ContactShowcase />}></Route>
           <Route
             path="/header-footer"
             element={<HeaderFooterShowcase />}

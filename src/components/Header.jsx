@@ -30,6 +30,10 @@ const Header = () => {
     { name: "Login/Signup", path: "/auth" },
     { name: "Skeleton", path: "/skeleton" },
     { name: "Header/Footer", path: "/header-footer" },
+    { name: "Contact", path: "/contact" },
+    { name: "Products", path: "/products" },
+    { name: "Dashboard Widgets", path: "/widgets" },
+    { name: "Inputs", path: "/inputs" },
   ];
 
   const toggleDarkMode = () => {
