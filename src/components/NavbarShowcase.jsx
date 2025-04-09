@@ -948,9 +948,7 @@ const NavbarShowcase = () => {
 
   return (
     <div
-      className={`${
-        darkMode ? "dark bg-gray-900 text-white" : "bg-gray-100 text-gray-900"
-      } min-h-screen p-6 transition-colors duration-300`}
+      className={`dark:bg-gray-900 dark:text-white bg-gray-100 text-gray-900 min-h-screen p-6 transition-colors duration-300`}
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}

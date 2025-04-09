@@ -2,24 +2,11 @@ import React, { useState, useEffect } from "react";
 import { FiMoon, FiSun, FiMenu, FiX } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { useTheme } from "../ThemeProvider";
 const Home = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const { theme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  useEffect(() => {
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    setDarkMode(prefersDark);
-    document.documentElement.classList.toggle("dark", prefersDark);
-  }, []);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.documentElement.classList.toggle("dark");
-  };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);

@@ -27,6 +27,7 @@ import ContactShowcase from "./components/ContactShowcase";
 import ProductShowcase from "./components/ProductShowcase";
 import DashboardWidgetsShowcase from "./components/DashboardWidgetsShowcase";
 import InputShowcase from "./components/InputShowcase";
+import NotFoundShowcase from "./components/NotFoundShowcase";
 const App = () => {
   return (
     <>
@@ -35,6 +36,7 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/pagenotfound" element={<NotFoundShowcase />}></Route>
             <Route path="/inputs" element={<InputShowcase />}></Route>
             <Route
               path="/widgets"

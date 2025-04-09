@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FiMoon, FiSun, FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { useTheme } from "../ThemeProvider";
+
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Hero", path: "/hero" },
@@ -34,12 +35,8 @@ const Header = () => {
     { name: "Products", path: "/products" },
     { name: "Dashboard Widgets", path: "/widgets" },
     { name: "Inputs", path: "/inputs" },
+    { name: "Page Not Found", path: "/pagenotfound" },
   ];
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.documentElement.classList.toggle("dark");
-  };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -60,9 +57,6 @@ const Header = () => {
           >
             TG UNIVERSE
           </Link>
-          <button onClick={toggleTheme}>
-            Switch to {theme === "light" ? "Dark" : "Light"} Theme
-          </button>
         </motion.div>
 
         {/* Desktop Navigation */}
@@ -100,10 +94,27 @@ const Header = () => {
               </div>
             )}
           </div>
+
+          {/* Theme Toggle Button */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="Toggle dark mode"
+          >
+            {theme === "dark" ? <FiSun size={20} /> : <FiMoon size={20} />}
+          </button>
         </nav>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
+        {/* Mobile Menu Button and Theme Toggle */}
+        <div className="md:hidden flex items-center gap-4">
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="Toggle dark mode"
+          >
+            {theme === "dark" ? <FiSun size={20} /> : <FiMoon size={20} />}
+          </button>
+
           <button onClick={toggleMobileMenu}>
             {mobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>

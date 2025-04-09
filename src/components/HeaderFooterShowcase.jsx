@@ -15,6 +15,7 @@ const HeaderFooterShowcase = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("headers");
 
   useEffect(() => {
     if (
@@ -90,13 +91,13 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Minimal Footer",
-      code: `<footer className="py-8 px-6 bg-gray-100">
+      code: `<footer className="py-8 px-6 bg-gray-100 dark:bg-gray-900 dark:text-white ">
   <div className="max-w-6xl mx-auto text-center">
     <p>© {new Date().getFullYear()} Company Name. All rights reserved.</p>
   </div>
 </footer>`,
       component: (
-        <footer className="py-8 px-6 bg-gray-100">
+        <footer className="py-8 px-6 bg-gray-100 dark:bg-gray-900 dark:text-white ">
           <div className="max-w-6xl mx-auto text-center">
             <p>
               © {new Date().getFullYear()} Company Name. All rights reserved.
@@ -354,7 +355,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Newsletter Footer",
-      code: `<footer className="py-12 px-6 bg-gray-100">
+      code: `<footer className="py-12 px-6 bg-gray-100 dark:bg-gray-900 dark:text-white">
   <div className="max-w-6xl mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div className="md:col-span-2">
@@ -387,7 +388,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-gray-100">
+        <footer className="py-12 px-6 bg-gray-100 dark:bg-gray-900 dark:text-white">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="md:col-span-2">
@@ -530,7 +531,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Sticky Header",
-      code: `<header className="py-4 px-6 bg-white shadow-md sticky top-0 z-50">
+      code: `<header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-md sticky top-0 z-50">
   <div className="max-w-6xl mx-auto flex justify-between items-center">
     <div className="text-2xl font-bold">Sticky</div>
     <nav className="hidden md:flex space-x-8">
@@ -545,7 +546,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white shadow-md sticky top-0 z-50">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-md sticky top-0 z-50">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             <div className="text-2xl font-bold">Sticky</div>
             <nav className="hidden md:flex space-x-8">
@@ -574,7 +575,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Contact Footer",
-      code: `<footer className="py-12 px-6 bg-gray-50">
+      code: `<footer className="py-12 text-center px-6 bg-gray-50 dark:bg-gray-900 dark:text-white">
   <div className="max-w-6xl mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
@@ -602,9 +603,9 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-gray-50">
+        <footer className="py-12 px-6 bg-gray-50 text-center dark:bg-gray-900 dark:text-white">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
               <div>
                 <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
                 <address className="not-italic">
@@ -844,7 +845,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "E-commerce Header",
-      code: `<header className="py-4 px-6 bg-white shadow-sm">
+      code: `<header className="py-4 px-6 dark:bg-gray-900 dark:text-white bg-white shadow-sm">
   <div className="max-w-6xl mx-auto">
     <div className="flex justify-between items-center mb-4">
       <div className="text-2xl font-bold">Shop</div>
@@ -881,7 +882,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white shadow-sm">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
           <div className="max-w-6xl mx-auto">
             <div className="flex justify-between items-center mb-4">
               <div className="text-2xl font-bold">Shop</div>
@@ -1077,7 +1078,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Split Header",
-      code: `<header className="py-4 px-6 bg-white border-b border-gray-200">
+      code: `<header className="py-4 px-6 bg-white border-b dark:bg-gray-900 dark:text-white border-gray-200">
   <div className="max-w-6xl mx-auto">
     <div className="flex flex-col md:flex-row justify-between items-center">
       <div className="flex items-center mb-4 md:mb-0">
@@ -1101,7 +1102,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white border-b border-gray-200">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white border-b border-gray-200">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center mb-4 md:mb-0">
@@ -1139,7 +1140,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Logo Showcase Footer",
-      code: `<footer className="py-12 px-6 bg-white">
+      code: `<footer className="py-12 px-6 bg-white dark:bg-gray-900 dark:text-white ">
   <div className="max-w-6xl mx-auto">
     <div className="flex flex-col items-center">
       <div className="text-3xl font-bold mb-8">Brand</div>
@@ -1170,7 +1171,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-white">
+        <footer className="py-12 px-6 bg-white dark:bg-gray-900 dark:text-white">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col items-center">
               <div className="text-3xl font-bold mb-8">Brand</div>
@@ -1217,7 +1218,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Mega Menu Header",
-      code: `<header className="py-4 px-6 bg-white shadow-sm">
+      code: `<header className="py-4 px-6 dark:bg-gray-900 dark:text-white bg-white shadow-sm">
   <div className="max-w-6xl mx-auto">
     <div className="flex justify-between items-center">
       <div className="text-2xl font-bold">MegaMenu</div>
@@ -1256,7 +1257,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white shadow-sm">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
           <div className="max-w-6xl mx-auto">
             <div className="flex justify-between items-center">
               <div className="text-2xl font-bold">MegaMenu</div>
@@ -1345,7 +1346,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Blog Footer",
-      code: `<footer className="py-12 px-6 bg-gray-50">
+      code: `<footer className="py-12 px-6 bg-gray-50 dark:bg-gray-900 dark:text-white">
   <div className="max-w-6xl mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
@@ -1354,20 +1355,20 @@ const HeaderFooterShowcase = () => {
           We share insights, tips, and stories about design, development, and business.
         </p>
         <div className="flex space-x-4">
-          <a href="#" className="text-gray-700 hover:text-blue-600"><FaTwitter /></a>
-          <a href="#" className="text-gray-700 hover:text-blue-800"><FaFacebook /></a>
-          <a href="#" className="text-gray-700 hover:text-pink-600"><FaInstagram /></a>
+          <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-blue-600"><FaTwitter /></a>
+          <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-blue-800"><FaFacebook /></a>
+          <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-pink-600"><FaInstagram /></a>
         </div>
       </div>
       <div>
         <h3 className="text-xl font-bold mb-4">Popular Tags</h3>
         <div className="flex flex-wrap gap-2">
-          <a href="#" className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300">Design</a>
-          <a href="#" className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300">Development</a>
-          <a href="#" className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300">Marketing</a>
-          <a href="#" className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300">Business</a>
-          <a href="#" className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300">Tips</a>
-          <a href="#" className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300">Tutorials</a>
+          <a href="#" className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300">Design</a>
+          <a href="#" className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300">Development</a>
+          <a href="#" className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300">Marketing</a>
+          <a href="#" className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300">Business</a>
+          <a href="#" className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300">Tips</a>
+          <a href="#" className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300">Tutorials</a>
         </div>
       </div>
       <div>
@@ -1393,7 +1394,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-gray-50">
+        <footer className="py-12 px-6 bg-gray-50 dark:bg-gray-900 dark:text-white">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
@@ -1403,53 +1404,62 @@ const HeaderFooterShowcase = () => {
                   development, and business.
                 </p>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-gray-700 hover:text-blue-600">
+                  <a
+                    href="#"
+                    className="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+                  >
                     <FaTwitter />
                   </a>
-                  <a href="#" className="text-gray-700 hover:text-blue-800">
+                  <a
+                    href="#"
+                    className="text-gray-700 dark:text-gray-300 hover:text-blue-800"
+                  >
                     <FaFacebook />
                   </a>
-                  <a href="#" className="text-gray-700 hover:text-pink-600">
+                  <a
+                    href="#"
+                    className="text-gray-700 dark:text-gray-300 hover:text-pink-600"
+                  >
                     <FaInstagram />
                   </a>
                 </div>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4">Popular Tags</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 ">
                   <a
                     href="#"
-                    className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300"
+                    className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300"
                   >
                     Design
                   </a>
                   <a
                     href="#"
-                    className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300"
+                    className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300"
                   >
                     Development
                   </a>
                   <a
                     href="#"
-                    className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300"
+                    className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300"
                   >
                     Marketing
                   </a>
                   <a
                     href="#"
-                    className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300"
+                    className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300"
                   >
                     Business
                   </a>
                   <a
                     href="#"
-                    className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300"
+                    className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300"
                   >
                     Tips
                   </a>
                   <a
                     href="#"
-                    className="px-3 py-1 bg-gray-200 rounded-full text-sm hover:bg-gray-300"
+                    className="px-3 py-1 bg-gray-400 rounded-full text-sm hover:bg-gray-300"
                   >
                     Tutorials
                   </a>
@@ -1694,7 +1704,7 @@ const HeaderFooterShowcase = () => {
   initial={{ y: -100 }}
   animate={{ y: 0 }}
   transition={{ type: "spring", stiffness: 300, damping: 20 }}
-  className="py-4 px-6 bg-white shadow-md sticky top-0 z-50"
+  className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-md sticky top-0 z-50"
 >
   <div className="max-w-6xl mx-auto flex justify-between items-center">
     <motion.div 
@@ -1750,7 +1760,7 @@ const HeaderFooterShowcase = () => {
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className="py-4 px-6 bg-white shadow-md sticky top-0 z-50"
+          className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-md sticky top-0 z-50"
         >
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             <motion.div
@@ -1973,12 +1983,12 @@ const HeaderFooterShowcase = () => {
     <div className="flex flex-col items-center">
       <div className="text-2xl font-bold mb-4">Logo</div>
       <div className="flex space-x-6 mb-4">
-        <a href="#" className="text-gray-700 hover:text-blue-600"><FaTwitter /></a>
-        <a href="#" className="text-gray-700 hover:text-blue-800"><FaFacebook /></a>
-        <a href="#" className="text-gray-700 hover:text-pink-600"><FaInstagram /></a>
-        <a href="#" className="text-gray-700 hover:text-blue-700"><FaLinkedin /></a>
+        <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-blue-600"><FaTwitter /></a>
+        <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-blue-800"><FaFacebook /></a>
+        <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-pink-600"><FaInstagram /></a>
+        <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-blue-700"><FaLinkedin /></a>
       </div>
-      <p className="text-gray-600 text-sm">
+      <p className="text-gray-600 dark:text-gray-300 text-sm">
         © {new Date().getFullYear()} Company Name. All rights reserved.
       </p>
     </div>
@@ -1990,20 +2000,32 @@ const HeaderFooterShowcase = () => {
             <div className="flex flex-col items-center">
               <div className="text-2xl font-bold mb-4">Logo</div>
               <div className="flex space-x-6 mb-4">
-                <a href="#" className="text-gray-700 hover:text-blue-600">
+                <a
+                  href="#"
+                  className="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+                >
                   <FaTwitter />
                 </a>
-                <a href="#" className="text-gray-700 hover:text-blue-800">
+                <a
+                  href="#"
+                  className="text-gray-700 dark:text-gray-300 hover:text-blue-800"
+                >
                   <FaFacebook />
                 </a>
-                <a href="#" className="text-gray-700 hover:text-pink-600">
+                <a
+                  href="#"
+                  className="text-gray-700 dark:text-gray-300 hover:text-pink-600"
+                >
                   <FaInstagram />
                 </a>
-                <a href="#" className="text-gray-700 hover:text-blue-700">
+                <a
+                  href="#"
+                  className="text-gray-700 dark:text-gray-300 hover:text-blue-700"
+                >
                   <FaLinkedin />
                 </a>
               </div>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
                 © {new Date().getFullYear()} Company Name. All rights reserved.
               </p>
             </div>
@@ -2016,7 +2038,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Search Header",
-      code: `<header className="py-4 px-6 bg-white shadow-sm">
+      code: `<header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
   <div className="max-w-6xl mx-auto">
     <div className="flex flex-col md:flex-row justify-between items-center">
       <div className="text-2xl font-bold mb-4 md:mb-0">Search</div>
@@ -2041,7 +2063,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white shadow-sm">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-2xl font-bold mb-4 md:mb-0">Search</div>
@@ -2088,22 +2110,22 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Simple Footer with Links",
-      code: `<footer className="py-8 px-6 bg-gray-50">
+      code: `<footer className="py-8 px-6 bg-gray-50 dark:bg-gray-900 dark:text-white ">
   <div className="max-w-6xl mx-auto">
     <div className="flex flex-col md:flex-row justify-between items-center">
       <div className="mb-4 md:mb-0">
         <p>© {new Date().getFullYear()} Company Name. All rights reserved.</p>
       </div>
       <div className="flex space-x-6">
-        <a href="#" className="text-gray-600 hover:text-blue-600">Privacy Policy</a>
-        <a href="#" className="text-gray-600 hover:text-blue-600">Terms of Service</a>
-        <a href="#" className="text-gray-600 hover:text-blue-600">Contact Us</a>
+        <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Privacy Policy</a>
+        <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Terms of Service</a>
+        <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Contact Us</a>
       </div>
     </div>
   </div>
 </footer>`,
       component: (
-        <footer className="py-8 px-6 bg-gray-50">
+        <footer className="py-8 px-6 bg-gray-50 dark:bg-gray-900 dark:text-white ">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
@@ -2113,13 +2135,22 @@ const HeaderFooterShowcase = () => {
                 </p>
               </div>
               <div className="flex space-x-6">
-                <a href="#" className="text-gray-600 hover:text-blue-600">
+                <a
+                  href="#"
+                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600"
+                >
                   Privacy Policy
                 </a>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
+                <a
+                  href="#"
+                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600"
+                >
                   Terms of Service
                 </a>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
+                <a
+                  href="#"
+                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600"
+                >
                   Contact Us
                 </a>
               </div>
@@ -2133,7 +2164,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Auth Header",
-      code: `<header className="py-4 px-6 bg-white border-b border-gray-200">
+      code: `<header className="py-4 px-6 bg-white border-b dark:bg-gray-900 dark:text-white border-gray-200">
   <div className="max-w-6xl mx-auto flex justify-between items-center">
     <div className="text-2xl font-bold">Auth</div>
     <div className="flex space-x-4">
@@ -2147,7 +2178,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white border-b border-gray-200">
+        <header className="py-4 px-6 bg-white border-b dark:bg-gray-900 dark:text-white border-gray-200">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             <div className="text-2xl font-bold">Auth</div>
             <div className="flex space-x-4">
@@ -2167,7 +2198,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Footer with Back to Top",
-      code: `<footer className="py-12 px-6 bg-gray-100">
+      code: `<footer className="py-12 px-6 bg-gray-100 dark:bg-gray-900 dark:text-white ">
   <div className="max-w-6xl mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
@@ -2207,7 +2238,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-gray-100">
+        <footer className="py-12 px-6 bg-gray-100 dark:bg-gray-900 dark:text-white ">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
@@ -2291,7 +2322,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Logo and Tagline Header",
-      code: `<header className="py-6 px-6 bg-white">
+      code: `<header className="py-6 px-6 bg-white dark:bg-gray-900 dark:text-white">
   <div className="max-w-6xl mx-auto">
     <div className="flex flex-col md:flex-row justify-between items-center">
       <div className="flex items-center mb-4 md:mb-0">
@@ -2311,7 +2342,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-6 px-6 bg-white">
+        <header className="py-6 px-6 bg-white dark:bg-gray-900 dark:text-white">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center mb-4 md:mb-0">
@@ -2345,7 +2376,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Footer with Payment Methods",
-      code: `<footer className="py-12 px-6 bg-gray-900 text-white">
+      code: `<footer className="py-12 px-6 bg-gray-900  text-white">
   <div className="max-w-6xl mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
@@ -2686,7 +2717,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Footer with Map",
-      code: `<footer className="py-12 px-6 bg-gray-100">
+      code: `<footer className="py-12 px-6 bg-gray-100 dark:bg-gray-900 dark:text-white ">
   <div className="max-w-6xl mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
@@ -2721,7 +2752,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-gray-100">
+        <footer className="py-12 px-6 bg-gray-100 dark:bg-gray-900 dark:text-white ">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -2785,7 +2816,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Header with Dropdown",
-      code: `<header className="py-4 px-6 bg-white shadow-sm">
+      code: `<header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
   <div className="max-w-6xl mx-auto flex justify-between items-center">
     <div className="text-2xl font-bold">Dropdown</div>
     <nav className="hidden md:flex space-x-8">
@@ -2809,7 +2840,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white shadow-sm">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             <div className="text-2xl font-bold">Dropdown</div>
             <nav className="hidden md:flex space-x-8">
@@ -2864,7 +2895,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Footer with Testimonials",
-      code: `<footer className="py-12 px-6 bg-gray-50">
+      code: `<footer className="py-12 px-6 dark:bg-gray-900 dark:text-white  bg-gray-50">
   <div className="max-w-6xl mx-auto">
     <div className="text-center mb-12">
       <h2 className="text-2xl font-bold mb-4">What Our Customers Say</h2>
@@ -2907,7 +2938,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-gray-50">
+        <footer className="py-12 px-6 bg-gray-50 dark:bg-gray-900 dark:text-white ">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-2xl font-bold mb-4">
@@ -2970,7 +3001,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Header with Language Selector",
-      code: `<header className="py-4 px-6 bg-white shadow-sm">
+      code: `<header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
   <div className="max-w-6xl mx-auto flex justify-between items-center">
     <div className="text-2xl font-bold">Language</div>
     <div className="flex items-center space-x-8">
@@ -3000,7 +3031,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white shadow-sm">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             <div className="text-2xl font-bold">Language</div>
             <div className="flex items-center space-x-8">
@@ -3196,10 +3227,10 @@ const HeaderFooterShowcase = () => {
       type: "header",
       name: "Header with Announcement Bar",
       code: `<div className="sticky top-0 z-50">
-  <div className="bg-blue-600 text-white text-center py-2 px-4">
+  <div className="bg-blue-600 text-white  text-center py-2 px-4">
     <p>🎉 Special offer! Get 20% off on all products. Use code: <strong>SAVE20</strong></p>
   </div>
-  <header className="py-4 px-6 bg-white shadow-sm">
+  <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
     <div className="max-w-6xl mx-auto flex justify-between items-center">
       <div className="text-2xl font-bold">Announcement</div>
       <nav className="hidden md:flex space-x-8">
@@ -3229,7 +3260,7 @@ const HeaderFooterShowcase = () => {
               <strong>SAVE20</strong>
             </p>
           </div>
-          <header className="py-4 px-6 bg-white shadow-sm">
+          <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
             <div className="max-w-6xl mx-auto flex justify-between items-center">
               <div className="text-2xl font-bold">Announcement</div>
               <nav className="hidden md:flex space-x-8">
@@ -3276,7 +3307,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Footer with Working Hours",
-      code: `<footer className="py-12 px-6 bg-gray-100">
+      code: `<footer className="py-12 px-6 dark:bg-gray-900 dark:text-white  bg-gray-100">
   <div className="max-w-6xl mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
@@ -3321,7 +3352,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-gray-100">
+        <footer className="py-12 px-6 dark:bg-gray-900 dark:text-white  bg-gray-100">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
@@ -3390,7 +3421,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Header with User Dropdown",
-      code: `<header className="py-4 px-6 bg-white shadow-sm">
+      code: `<header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
   <div className="max-w-6xl mx-auto flex justify-between items-center">
     <div className="text-2xl font-bold">User</div>
     <div className="flex items-center space-x-6">
@@ -3420,7 +3451,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white shadow-sm">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             <div className="text-2xl font-bold">User</div>
             <div className="flex items-center space-x-6">
@@ -3642,7 +3673,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Header with Breadcrumbs",
-      code: `<header className="py-4 px-6 bg-white border-b border-gray-200">
+      code: `<header className="py-4 px-6 bg-white border-b dark:bg-gray-900 dark:text-white border-gray-200">
   <div className="max-w-6xl mx-auto">
     <div className="flex justify-between items-center mb-4">
       <div className="text-2xl font-bold">Breadcrumbs</div>
@@ -3676,7 +3707,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white border-b border-gray-200">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white border-b border-gray-200">
           <div className="max-w-6xl mx-auto">
             <div className="flex justify-between items-center mb-4">
               <div className="text-2xl font-bold">Breadcrumbs</div>
@@ -3726,7 +3757,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Footer with Partners",
-      code: `<footer className="py-12 px-6 bg-white">
+      code: `<footer className="py-12 px-6 bg-white dark:bg-gray-900 dark:text-white ">
   <div className="max-w-6xl mx-auto">
     <div className="text-center mb-12">
       <h3 className="text-xl font-bold mb-6">Trusted by companies worldwide</h3>
@@ -3783,7 +3814,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-white">
+        <footer className="py-12 px-6 bg-white dark:bg-gray-900 dark:text-white ">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h3 className="text-xl font-bold mb-6">
@@ -3887,10 +3918,10 @@ const HeaderFooterShowcase = () => {
       type: "header",
       name: "Header with Progress Bar",
       code: `<header className="sticky top-0 z-50">
-  <div className="h-1 w-full bg-gray-200">
+  <div className="h-1 w-full bg-gray-200 ">
     <div className="h-full bg-blue-600" style={{ width: '75%' }}></div>
   </div>
-  <div className="py-4 px-6 bg-white shadow-sm">
+  <div className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
     <div className="max-w-6xl mx-auto flex justify-between items-center">
       <div className="text-2xl font-bold">Progress</div>
       <nav className="hidden md:flex space-x-8">
@@ -3910,7 +3941,7 @@ const HeaderFooterShowcase = () => {
           <div className="h-1 w-full bg-gray-200">
             <div className="h-full bg-blue-600" style={{ width: "75%" }}></div>
           </div>
-          <div className="py-4 px-6 bg-white shadow-sm">
+          <div className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
             <div className="max-w-6xl mx-auto flex justify-between items-center">
               <div className="text-2xl font-bold">Progress</div>
               <nav className="hidden md:flex space-x-8">
@@ -3940,7 +3971,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Footer with Call to Action",
-      code: `<footer className="py-12 px-6 bg-gray-50">
+      code: `<footer className="py-12 px-6 dark:bg-gray-900 dark:text-white  bg-gray-50">
   <div className="max-w-6xl mx-auto">
     <div className="bg-blue-600 text-white rounded-lg p-8 mb-12 text-center">
       <h2 className="text-2xl font-bold mb-4">Ready to get started?</h2>
@@ -3982,7 +4013,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-gray-50">
+        <footer className="py-12 px-6 bg-gray-50 dark:bg-gray-900 dark:text-white ">
           <div className="max-w-6xl mx-auto">
             <div className="bg-blue-600 text-white rounded-lg p-8 mb-12 text-center">
               <h2 className="text-2xl font-bold mb-4">Ready to get started?</h2>
@@ -4067,7 +4098,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Header with Notification",
-      code: `<header className="py-4 px-6 bg-white shadow-sm">
+      code: `<header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
   <div className="max-w-6xl mx-auto flex justify-between items-center">
     <div className="text-2xl font-bold">Notification</div>
     <div className="flex items-center space-x-6">
@@ -4091,7 +4122,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white shadow-sm">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white shadow-sm">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             <div className="text-2xl font-bold">Notification</div>
             <div className="flex items-center space-x-6">
@@ -4311,7 +4342,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "header",
       name: "Header with Tabs",
-      code: `<header className="py-4 px-6 bg-white border-b border-gray-200">
+      code: `<header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white border-b border-gray-200">
   <div className="max-w-6xl mx-auto">
     <div className="flex justify-between items-center mb-4">
       <div className="text-2xl font-bold">Tabs</div>
@@ -4335,7 +4366,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </header>`,
       component: (
-        <header className="py-4 px-6 bg-white border-b border-gray-200">
+        <header className="py-4 px-6 bg-white dark:bg-gray-900 dark:text-white border-b border-gray-200">
           <div className="max-w-6xl mx-auto">
             <div className="flex justify-between items-center mb-4">
               <div className="text-2xl font-bold">Tabs</div>
@@ -4395,7 +4426,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Footer with Stats",
-      code: `<footer className="py-12 px-6 bg-gray-50">
+      code: `<footer className="py-12 px-6 dark:bg-gray-900 dark:text-white  bg-gray-50">
   <div className="max-w-6xl mx-auto">
     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 text-center">
       <div>
@@ -4447,7 +4478,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-12 px-6 bg-gray-50">
+        <footer className="py-12 px-6 bg-gray-50 dark:bg-gray-900 dark:text-white ">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 text-center">
               <div>
@@ -4614,7 +4645,7 @@ const HeaderFooterShowcase = () => {
     {
       type: "footer",
       name: "Footer with Copyright Links",
-      code: `<footer className="py-8 px-6 bg-gray-100">
+      code: `<footer className="py-8 px-6 dark:bg-gray-900 dark:text-white  bg-gray-100">
   <div className="max-w-6xl mx-auto">
     <div className="flex flex-col md:flex-row justify-between items-center">
       <div className="mb-4 md:mb-0">
@@ -4629,7 +4660,7 @@ const HeaderFooterShowcase = () => {
   </div>
 </footer>`,
       component: (
-        <footer className="py-8 px-6 bg-gray-100">
+        <footer className="py-8 px-6 dark:bg-gray-900 dark:text-white  bg-gray-100">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
@@ -4661,9 +4692,7 @@ const HeaderFooterShowcase = () => {
 
   return (
     <div
-      className={`min-h-screen p-8 transition-colors duration-300 ${
-        darkMode ? "dark bg-gray-900 text-white" : "bg-gray-50 text-gray-900"
-      }`}
+      className={`min-h-screen p-8 transition-colors duration-300 dark:bg-gray-900 dark:text-white bg-gray-50 text-gray-900`}
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -4694,54 +4723,131 @@ const HeaderFooterShowcase = () => {
           <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-8"></div>
         </motion.section>
 
-        {/* Headers Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-16"
-        >
-          <h2 className="text-3xl font-bold mb-8">Headers</h2>
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
-            {headers.map((header, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg"
-              >
-                <h3 className="text-xl font-semibold mb-4">{header.name}</h3>
-                <div className="relative group">
-                  <div className="overflow-hidden rounded-lg mb-4 border border-gray-200 dark:border-gray-700">
-                    {header.component}
-                  </div>
-                  <button
-                    onClick={() => copyToClipboard(header.code, index)}
-                    className="absolute top-4 right-4 p-2 bg-gray-100 dark:bg-gray-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md"
-                    aria-label="Copy code"
-                  >
-                    {copiedIndex === index ? (
-                      <FiCheck className="text-green-500" />
-                    ) : (
-                      <FiCopy className="text-gray-600 dark:text-gray-300" />
-                    )}
-                  </button>
-                  {copiedIndex === index && (
-                    <motion.div
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="absolute top-12 right-4 bg-gray-800 text-white text-xs px-2 py-1 rounded"
+        {/* Tabs Navigation */}
+        <div className="flex border-b border-gray-200 dark:border-gray-700 mb-8">
+          <button
+            onClick={() => setActiveTab("headers")}
+            className={`py-2 px-4 font-medium text-xl focus:outline-none ${
+              activeTab === "headers"
+                ? "border-b-2 border-purple-500 text-purple-600 dark:text-purple-400"
+                : "text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+            }`}
+          >
+            Headers
+          </button>
+          <button
+            onClick={() => setActiveTab("footers")}
+            className={`py-2 px-4 font-medium text-xl focus:outline-none ${
+              activeTab === "footers"
+                ? "border-b-2 border-purple-500 text-purple-600 dark:text-purple-400"
+                : "text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+            }`}
+          >
+            Footers
+          </button>
+        </div>
+
+        {/* Headers Section - Only shown when headers tab is active */}
+        {activeTab === "headers" && (
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-16"
+          >
+            <h2 className="text-3xl font-bold mb-8">Headers</h2>
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
+              {headers.map((header, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg"
+                >
+                  <h3 className="text-xl font-semibold mb-4">{header.name}</h3>
+                  <div className="relative group">
+                    <div className="overflow-hidden rounded-lg mb-4 border border-gray-200 dark:border-gray-700">
+                      {header.component}
+                    </div>
+                    <button
+                      onClick={() => copyToClipboard(header.code, index)}
+                      className="absolute top-4 right-4 p-2 bg-gray-100 dark:bg-gray-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md"
+                      aria-label="Copy code"
                     >
-                      Copied!
-                    </motion.div>
-                  )}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
+                      {copiedIndex === index ? (
+                        <FiCheck className="text-green-500" />
+                      ) : (
+                        <FiCopy className="text-gray-600 dark:text-gray-300" />
+                      )}
+                    </button>
+                    {copiedIndex === index && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        className="absolute top-12 right-4 bg-gray-800 text-white text-xs px-2 py-1 rounded"
+                      >
+                        Copied!
+                      </motion.div>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.section>
+        )}
+
+        {/* Footers Section - Only shown when footers tab is active */}
+        {activeTab === "footers" && (
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-16"
+          >
+            <h2 className="text-3xl font-bold mb-8">Footers</h2>
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
+              {footers.map((footer, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg"
+                >
+                  <h3 className="text-xl font-semibold mb-4">{footer.name}</h3>
+                  <div className="relative group">
+                    <div className="overflow-hidden rounded-lg mb-4 border border-gray-200 dark:border-gray-700">
+                      {footer.component}
+                    </div>
+                    <button
+                      onClick={() => copyToClipboard(footer.code, index)}
+                      className="absolute top-4 right-4 p-2 bg-gray-100 dark:bg-gray-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md"
+                      aria-label="Copy code"
+                    >
+                      {copiedIndex === index ? (
+                        <FiCheck className="text-green-500" />
+                      ) : (
+                        <FiCopy className="text-gray-600 dark:text-gray-300" />
+                      )}
+                    </button>
+                    {copiedIndex === index && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        className="absolute top-12 right-4 bg-gray-800 text-white text-xs px-2 py-1 rounded"
+                      >
+                        Copied!
+                      </motion.div>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.section>
+        )}
       </div>
     </div>
   );

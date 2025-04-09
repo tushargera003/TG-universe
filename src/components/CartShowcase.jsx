@@ -20,22 +20,8 @@ import {
 } from "react-icons/fa";
 import { GrAmex } from "react-icons/gr";
 const CartShowcase = () => {
-  const [darkMode, setDarkMode] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState(null);
   const [quantities, setQuantities] = useState(Array(20).fill(1));
-
-  useEffect(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      setDarkMode(true);
-    }
-  }, []);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
 
   const copyToClipboard = (code, index) => {
     navigator.clipboard.writeText(code);
@@ -2861,9 +2847,8 @@ const CartShowcase = () => {
 
   return (
     <div
-      className={`min-h-screen p-8 transition-colors duration-300 ${
-        darkMode ? "dark bg-gray-900 text-white" : "bg-gray-50 text-gray-900"
-      }`}
+      className={`min-h-screen p-8 transition-colors duration-300 dark:bg-gray-900 dark:text-white bg-gray-50 text-gray-900
+      `}
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}

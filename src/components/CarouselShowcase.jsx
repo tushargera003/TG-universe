@@ -234,8 +234,7 @@ const CarouselShowcase = () => {
 
   return (
     <div
-      className={`min-h-screen p-4 md:p-8 transition-colors duration-300 ${
-        darkMode ? "dark bg-gray-900 text-white" : "bg-gray-50 text-gray-900"
+      className={`min-h-screen p-4 md:p-8 transition-colors duration-300 dark:bg-gray-900 dark:text-white bg-gray-50 text-gray-900
       }`}
     >
       <div className="max-w-7xl mx-auto">
@@ -360,7 +359,10 @@ const BasicCardCarousel = ({ darkMode }) => {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {items.map((item) => (
-            <div key={item.id} className="w-full flex-shrink-0 p-4">
+            <div
+              key={item.id}
+              className="w-full flex-shrink-0 dark:text-gray-400 p-4"
+            >
               <div
                 className={`rounded-lg shadow-md p-6 ${
                   darkMode ? "bg-gray-700" : "bg-white"
@@ -550,7 +552,7 @@ const TestimonialCarousel = ({ darkMode }) => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full ${
+              className={`w-2 h-2 rounded-full dark:text-gray-400 ${
                 currentIndex === index
                   ? "bg-blue-500"
                   : darkMode
@@ -717,9 +719,7 @@ const MinimalDotCarousel = ({ darkMode }) => {
           {slides.map((slide) => (
             <div key={slide.id} className="w-full flex-shrink-0 p-8">
               <div
-                className={`rounded-lg p-6 text-center ${
-                  darkMode ? "bg-gray-700" : "bg-white"
-                }`}
+                className={`rounded-lg p-6 text-center dark:text-gray-400 dark:bg-gray-700 bg-white`}
               >
                 <p>{slide.content}</p>
               </div>
@@ -732,7 +732,7 @@ const MinimalDotCarousel = ({ darkMode }) => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-8 h-1 rounded-full ${
+            className={`w-8 h-1 rounded-full  ${
               currentIndex === index
                 ? "bg-blue-500"
                 : darkMode
@@ -1015,9 +1015,8 @@ const ThreeDCarousel = ({ darkMode }) => {
           return (
             <motion.div
               key={item.id}
-              className={`absolute w-3/4 h-full left-1/2 -translate-x-1/2 rounded-xl shadow-xl ${
-                darkMode ? "bg-gray-700 " : "bg-white"
-              }`}
+              className={`absolute w-3/4 h-full left-1/2 -translate-x-1/2 rounded-xl shadow-xl dark:bg-gray-700 bg-white
+              `}
               style={{
                 transform,
                 zIndex,
