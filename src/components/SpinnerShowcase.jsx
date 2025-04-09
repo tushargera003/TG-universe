@@ -960,20 +960,6 @@ const SpinnerShowcase = () => {
                 </button>
               )}
             </motion.div>
-
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center"
-              aria-label="Toggle dark mode"
-            >
-              {darkMode ? (
-                <FiSun className="text-yellow-400" />
-              ) : (
-                <FiMoon className="text-gray-700" />
-              )}
-            </motion.button>
           </div>
         </header>
 

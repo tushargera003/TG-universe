@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FiMoon, FiSun, FiMenu, FiX, FiChevronDown } from "react-icons/fi";
-
+import { useTheme } from "../ThemeProvider";
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
+  const { theme, toggleTheme } = useTheme();
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Hero", path: "/hero" },
@@ -46,7 +46,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full px-6 py-4 shadow-md bg-white dark:bg-gray-900 sticky top-0 z-50">
+    <header className="w-full px-6 py-4 shadow-md bg-white dark:bg-gray-900 dark:text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <motion.div
@@ -60,6 +60,9 @@ const Header = () => {
           >
             TG UNIVERSE
           </Link>
+          <button onClick={toggleTheme}>
+            Switch to {theme === "light" ? "Dark" : "Light"} Theme
+          </button>
         </motion.div>
 
         {/* Desktop Navigation */}

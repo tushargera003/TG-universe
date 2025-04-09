@@ -1016,7 +1016,7 @@ const ThreeDCarousel = ({ darkMode }) => {
             <motion.div
               key={item.id}
               className={`absolute w-3/4 h-full left-1/2 -translate-x-1/2 rounded-xl shadow-xl ${
-                darkMode ? "bg-gray-700" : "bg-white"
+                darkMode ? "bg-gray-700 " : "bg-white"
               }`}
               style={{
                 transform,

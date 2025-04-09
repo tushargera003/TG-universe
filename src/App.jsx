@@ -1,4 +1,5 @@
 import React from "react";
+import { ThemeProvider } from "./ThemeProvider";
 import ButtonShowcase from "./components/ButtonShowCase";
 import CardShowcase from "./components/CardShowcase";
 import SpinnerShowcase from "./components/SpinnerShowcase";
@@ -29,39 +30,47 @@ import InputShowcase from "./components/InputShowcase";
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/inputs" element={<InputShowcase />}></Route>
-          <Route path="/widgets" element={<DashboardWidgetsShowcase />}></Route>
-          <Route path="/products" element={<ProductShowcase />}></Route>
-          <Route path="/contact" element={<ContactShowcase />}></Route>
-          <Route
-            path="/header-footer"
-            element={<HeaderFooterShowcase />}
-          ></Route>
+      <ThemeProvider>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/inputs" element={<InputShowcase />}></Route>
+            <Route
+              path="/widgets"
+              element={<DashboardWidgetsShowcase />}
+            ></Route>
+            <Route path="/products" element={<ProductShowcase />}></Route>
+            <Route path="/contact" element={<ContactShowcase />}></Route>
+            <Route
+              path="/header-footer"
+              element={<HeaderFooterShowcase />}
+            ></Route>
 
-          <Route path="/chat" element={<ChatBubbleShowcase />}></Route>
-          <Route path="/skeleton" element={<SkeletonShowcase />}></Route>
-          <Route path="/auth" element={<AuthPageShowcase />}></Route>
-          <Route path="/aboutus" element={<AboutUsShowcase />}></Route>
-          <Route path="/hero" element={<HeroShowcase />}></Route>
-          <Route path="/cart" element={<CartShowcase />}></Route>
-          <Route path="/modals" element={<ModalShowcase />}></Route>
+            <Route path="/chat" element={<ChatBubbleShowcase />}></Route>
+            <Route path="/skeleton" element={<SkeletonShowcase />}></Route>
+            <Route path="/auth" element={<AuthPageShowcase />}></Route>
+            <Route path="/aboutus" element={<AboutUsShowcase />}></Route>
+            <Route path="/hero" element={<HeroShowcase />}></Route>
+            <Route path="/cart" element={<CartShowcase />}></Route>
+            <Route path="/modals" element={<ModalShowcase />}></Route>
 
-          <Route path="/slider" element={<SliderShowcase />}></Route>
-          <Route path="/carousel" element={<CarouselShowcase />}></Route>
-          <Route path="/toast" element={<ToastShowcase />}></Route>
-          <Route path="/breadcrumbs" element={<BreadcrumbsShowcase />}></Route>
-          <Route path="/pagingation" element={<PaginationShowcase />}></Route>
-          <Route path="/navbar" element={<NavbarShowcase />}></Route>
-          <Route path="/spinner" element={<SpinnerShowcase />}></Route>
-          <Route path="/card" element={<CardShowcase />}></Route>
-          <Route path="/button" element={<ButtonShowcase />}></Route>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+            <Route path="/slider" element={<SliderShowcase />}></Route>
+            <Route path="/carousel" element={<CarouselShowcase />}></Route>
+            <Route path="/toast" element={<ToastShowcase />}></Route>
+            <Route
+              path="/breadcrumbs"
+              element={<BreadcrumbsShowcase />}
+            ></Route>
+            <Route path="/pagingation" element={<PaginationShowcase />}></Route>
+            <Route path="/navbar" element={<NavbarShowcase />}></Route>
+            <Route path="/spinner" element={<SpinnerShowcase />}></Route>
+            <Route path="/card" element={<CardShowcase />}></Route>
+            <Route path="/button" element={<ButtonShowcase />}></Route>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   );
 };

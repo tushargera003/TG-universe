@@ -26,7 +26,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white mt-20 min-h-screen">
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white  min-h-screen">
       {/* Header */}
 
       {/* Hero Section */}
