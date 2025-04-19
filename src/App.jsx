@@ -28,6 +28,7 @@ import ProductShowcase from "./components/ProductShowcase";
 import DashboardWidgetsShowcase from "./components/DashboardWidgetsShowcase";
 import InputShowcase from "./components/InputShowcase";
 import NotFoundShowcase from "./components/NotFoundShowcase";
+import ErrorPage from "./components/ErrorPage";
 const App = () => {
   return (
     <>
@@ -69,6 +70,7 @@ const App = () => {
             <Route path="/spinner" element={<SpinnerShowcase />}></Route>
             <Route path="/card" element={<CardShowcase />}></Route>
             <Route path="/button" element={<ButtonShowcase />}></Route>
+            <Route path="/*" element={<ErrorPage />}></Route>
           </Routes>
           <Footer />
         </BrowserRouter>
