@@ -17,6 +17,7 @@ const Header = () => {
   const dropdownLinks = [
     { name: "Buttons", path: "/button" },
     { name: "Cards", path: "/card" },
+    { name: "Text Styles", path: "/text" },
     { name: "Cart", path: "/cart" },
     { name: "Chat Bubble", path: "/chat" },
     { name: "Modals", path: "/modals" },

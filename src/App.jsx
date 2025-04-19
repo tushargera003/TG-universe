@@ -29,6 +29,7 @@ import DashboardWidgetsShowcase from "./components/DashboardWidgetsShowcase";
 import InputShowcase from "./components/InputShowcase";
 import NotFoundShowcase from "./components/NotFoundShowcase";
 import ErrorPage from "./components/ErrorPage";
+import TextStylesShowcase from "./components/TextStyleShowcase";
 const App = () => {
   return (
     <>
@@ -37,6 +38,7 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/text" element={<TextStylesShowcase />}></Route>
             <Route path="/pagenotfound" element={<NotFoundShowcase />}></Route>
             <Route path="/inputs" element={<InputShowcase />}></Route>
             <Route
