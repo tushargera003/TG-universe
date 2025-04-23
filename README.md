@@ -1,12 +1,44 @@
-# React + Vite
+# 🌌 TG Universe UI Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://tg-universe.vercel.app)
+[![Tailwind CSS](https://img.shields.io/badge/Built_with-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-Currently, two official plugins are available:
+<div align="center">
+  <img src="https://raw.githubusercontent.com/tushargera003/tg-universe/main/public/android-chrome-512x512.png" width="100" alt="TG Universe Cover"/>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Instant UI Components for Modern Web Apps
 
-## Expanding the ESLint configuration
+TG Universe offers **150+ handcrafted components** and **30+ full-page layouts** built entirely with Tailwind CSS. Designed for developers who want beautiful, production-ready UI blocks without any setup or authentication barriers.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+- 🎨 **One-Click Copy** - Get clean, ready-to-use code instantly
+- � **Zero Dependencies** - Pure Tailwind CSS (No React/Vue specific code)
+- 📱 **Fully Responsive** - Works flawlessly on all devices
+- 🎭 **Dark/Light Mode** - All components support both color schemes
+- 🏗️ **Modular Design** - Mix and match components effortlessly
+
+## 🏆 Featured Components
+
+| Category       | Highlights                          | Live Preview                          |
+|----------------|-------------------------------------|---------------------------------------|
+| **Buttons**    | Animated, 3D, Glassmorphism         | [View](https://tg-universe.vercel.app/button) |
+| **Cards**      | Product, Profile, Pricing           | [View](https://tg-universe.vercel.app/card) |
+| **Forms**      | Login, Contact, Multi-step          | [View](https://tg-universe.vercel.app/auth) |
+| **Sections**   | Hero, Features, Testimonials        | [View](https://tg-universe.vercel.app/hero) |
+| **Pages**      | Complete landing page templates     | [View](https://tg-universe.vercel.app/pagenotfound) |
+
+## 🛠️ Usage
+
+1. **Browse** components on [TG Universe](https://tg-universe.vercel.app)
+2. **Click** the copy button on any component
+3. **Paste** into your project
+4. **Customize** with your own colors/content
+
+```html
+<!-- Example: Animated Button -->
+<button class="tg-btn tg-btn-primary tg-btn-animate">
+  Click Me
+</button>
