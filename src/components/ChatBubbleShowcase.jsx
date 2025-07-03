@@ -2061,9 +2061,8 @@ const ChatBubbleShowcase = () => {
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300 ${
-        darkMode ? "dark bg-gray-900" : "bg-gray-50"
-      }`}
+      className={`min-h-screen p-8 transition-colors duration-300 dark:bg-gray-900 dark:text-white bg-gray-50 text-gray-900
+      `}
     >
       <div className="p-8">
         <div className="max-w-7xl mx-auto">

@@ -1829,8 +1829,2092 @@ const ContactShowcase = () => {
       ),
     },
 
-    // Design 27-50 would continue here...
-    // Each with unique design elements and features
+    {
+      name: "Glassmorphism Contact",
+      code: `<div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 p-8 flex items-center justify-center">
+  <div className="max-w-md w-full backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl p-8 shadow-2xl">
+    <div className="text-center mb-8">
+      <div className="w-16 h-16 mx-auto mb-4 bg-white/30 rounded-full flex items-center justify-center">
+        <FiMessageSquare className="text-white text-2xl" />
+      </div>
+      <h2 className="text-2xl font-bold text-white mb-2">Get in Touch</h2>
+      <p className="text-white/80">We'd love to hear from you</p>
+    </div>
+    
+    <form className="space-y-4">
+      <div>
+        <input 
+          type="text" 
+          placeholder="Your Name" 
+          className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50" 
+        />
+      </div>
+      <div>
+        <input 
+          type="email" 
+          placeholder="Your Email" 
+          className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50" 
+        />
+      </div>
+      <div>
+        <textarea 
+          rows="4" 
+          placeholder="Your Message" 
+          className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+        ></textarea>
+      </div>
+      <button className="w-full py-3 bg-white/30 hover:bg-white/40 text-white font-medium rounded-lg backdrop-blur-sm transition duration-300">
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>`,
+      component: (
+        <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 p-8 flex items-center justify-center">
+          <div className="max-w-md w-full backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl p-8 shadow-2xl">
+            <div className="text-center mb-8">
+              <div className="w-16 h-16 mx-auto mb-4 bg-white/30 rounded-full flex items-center justify-center">
+                <FiMessageSquare className="text-white text-2xl" />
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-2">
+                Get in Touch
+              </h2>
+              <p className="text-white/80">We'd love to hear from you</p>
+            </div>
+
+            <form className="space-y-4">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                />
+              </div>
+              <div>
+                <textarea
+                  rows="4"
+                  placeholder="Your Message"
+                  className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                ></textarea>
+              </div>
+              <button className="w-full py-3 bg-white/30 hover:bg-white/40 text-white font-medium rounded-lg backdrop-blur-sm transition duration-300">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      ),
+    },
+
+    // Design 2: Neumorphism Style
+    {
+      name: "Neumorphism Contact",
+      code: `<div className="min-h-screen bg-gray-200 dark:bg-gray-800 p-8 flex items-center justify-center">
+  <div className="max-w-lg w-full bg-gray-200 dark:bg-gray-800 rounded-3xl p-8 shadow-neumorphism">
+    <div className="text-center mb-8">
+      <div className="w-20 h-20 mx-auto mb-6 bg-gray-200 dark:bg-gray-800 rounded-full flex items-center justify-center shadow-neumorphism-inset">
+        <FiSend className="text-blue-500 text-3xl" />
+      </div>
+      <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">Contact Us</h2>
+      <p className="text-gray-600 dark:text-gray-400">Let's start a conversation</p>
+    </div>
+    
+    <form className="space-y-6">
+      <div>
+        <input 
+          type="text" 
+          placeholder="Full Name" 
+          className="w-full p-4 bg-gray-200 dark:bg-gray-800 rounded-2xl shadow-neumorphism-inset text-gray-800 dark:text-white placeholder-gray-500 focus:outline-none" 
+        />
+      </div>
+      <div>
+        <input 
+          type="email" 
+          placeholder="Email Address" 
+          className="w-full p-4 bg-gray-200 dark:bg-gray-800 rounded-2xl shadow-neumorphism-inset text-gray-800 dark:text-white placeholder-gray-500 focus:outline-none" 
+        />
+      </div>
+      <div>
+        <textarea 
+          rows="4" 
+          placeholder="Your Message" 
+          className="w-full p-4 bg-gray-200 dark:bg-gray-800 rounded-2xl shadow-neumorphism-inset text-gray-800 dark:text-white placeholder-gray-500 focus:outline-none resize-none"
+        ></textarea>
+      </div>
+      <button className="w-full py-4 bg-gray-200 dark:bg-gray-800 text-blue-500 font-semibold rounded-2xl shadow-neumorphism hover:shadow-neumorphism-pressed transition duration-300">
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>`,
+      component: (
+        <div className="min-h-screen bg-gray-200 dark:bg-gray-800 p-8 flex items-center justify-center">
+          <div
+            className="max-w-lg w-full bg-gray-200 dark:bg-gray-800 rounded-3xl p-8"
+            style={{
+              boxShadow: "20px 20px 60px #bebebe, -20px -20px 60px #ffffff",
+            }}
+          >
+            <div className="text-center mb-8">
+              <div
+                className="w-20 h-20 mx-auto mb-6 bg-gray-200 dark:bg-gray-800 rounded-full flex items-center justify-center"
+                style={{
+                  boxShadow:
+                    "inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff",
+                }}
+              >
+                <FiSend className="text-blue-500 text-3xl" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">
+                Contact Us
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400">
+                Let's start a conversation
+              </p>
+            </div>
+
+            <form className="space-y-6">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="w-full p-4 bg-gray-200 dark:bg-gray-800 rounded-2xl text-gray-800 dark:text-white placeholder-gray-500 focus:outline-none"
+                  style={{
+                    boxShadow:
+                      "inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff",
+                  }}
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full p-4 bg-gray-200 dark:bg-gray-800 rounded-2xl text-gray-800 dark:text-white placeholder-gray-500 focus:outline-none"
+                  style={{
+                    boxShadow:
+                      "inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff",
+                  }}
+                />
+              </div>
+              <div>
+                <textarea
+                  rows="4"
+                  placeholder="Your Message"
+                  className="w-full p-4 bg-gray-200 dark:bg-gray-800 rounded-2xl text-gray-800 dark:text-white placeholder-gray-500 focus:outline-none resize-none"
+                  style={{
+                    boxShadow:
+                      "inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff",
+                  }}
+                ></textarea>
+              </div>
+              <button
+                className="w-full py-4 bg-gray-200 dark:bg-gray-800 text-blue-500 font-semibold rounded-2xl hover:opacity-90 transition duration-300"
+                style={{
+                  boxShadow: "5px 5px 10px #bebebe, -5px -5px 10px #ffffff",
+                }}
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      ),
+    },
+
+    // Design 3: Floating Labels
+    {
+      name: "Floating Labels Contact",
+      code: `<div className="max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+  <div className="text-center mb-10">
+    <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Contact Form</h2>
+    <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+  </div>
+  
+  <form className="space-y-8">
+    <div className="relative">
+      <input 
+        type="text" 
+        id="name" 
+        className="peer w-full p-4 pt-6 bg-transparent border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 text-gray-800 dark:text-white" 
+        placeholder=" "
+      />
+      <label 
+        htmlFor="name" 
+        className="absolute left-4 top-2 text-sm text-gray-600 dark:text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 dark:peer-focus:text-blue-400"
+      >
+        Your Name
+      </label>
+    </div>
+    
+    <div className="relative">
+      <input 
+        type="email" 
+        id="email" 
+        className="peer w-full p-4 pt-6 bg-transparent border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 text-gray-800 dark:text-white" 
+        placeholder=" "
+      />
+      <label 
+        htmlFor="email" 
+        className="absolute left-4 top-2 text-sm text-gray-600 dark:text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 dark:peer-focus:text-blue-400"
+      >
+        Email Address
+      </label>
+    </div>
+    
+    <div className="relative">
+      <input 
+        type="text" 
+        id="subject" 
+        className="peer w-full p-4 pt-6 bg-transparent border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 text-gray-800 dark:text-white" 
+        placeholder=" "
+      />
+      <label 
+        htmlFor="subject" 
+        className="absolute left-4 top-2 text-sm text-gray-600 dark:text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 dark:peer-focus:text-blue-400"
+      >
+        Subject
+      </label>
+    </div>
+    
+    <div className="relative">
+      <textarea 
+        id="message" 
+        rows="4" 
+        className="peer w-full p-4 pt-6 bg-transparent border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 text-gray-800 dark:text-white resize-none" 
+        placeholder=" "
+      ></textarea>
+      <label 
+        htmlFor="message" 
+        className="absolute left-4 top-2 text-sm text-gray-600 dark:text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 dark:peer-focus:text-blue-400"
+      >
+        Your Message
+      </label>
+    </div>
+    
+    <button className="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-600 transition duration-300 transform hover:scale-105">
+      Send Message
+    </button>
+  </form>
+</div>`,
+      component: (
+        <div className="max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              Contact Form
+            </h2>
+            <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+          </div>
+
+          <form className="space-y-8">
+            <div className="relative">
+              <input
+                type="text"
+                id="name"
+                className="peer w-full p-4 pt-6 bg-transparent border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 text-gray-800 dark:text-white"
+                placeholder=" "
+              />
+              <label
+                htmlFor="name"
+                className="absolute left-4 top-2 text-sm text-gray-600 dark:text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 dark:peer-focus:text-blue-400"
+              >
+                Your Name
+              </label>
+            </div>
+
+            <div className="relative">
+              <input
+                type="email"
+                id="email"
+                className="peer w-full p-4 pt-6 bg-transparent border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 text-gray-800 dark:text-white"
+                placeholder=" "
+              />
+              <label
+                htmlFor="email"
+                className="absolute left-4 top-2 text-sm text-gray-600 dark:text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 dark:peer-focus:text-blue-400"
+              >
+                Email Address
+              </label>
+            </div>
+
+            <div className="relative">
+              <input
+                type="text"
+                id="subject"
+                className="peer w-full p-4 pt-6 bg-transparent border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 text-gray-800 dark:text-white"
+                placeholder=" "
+              />
+              <label
+                htmlFor="subject"
+                className="absolute left-4 top-2 text-sm text-gray-600 dark:text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 dark:peer-focus:text-blue-400"
+              >
+                Subject
+              </label>
+            </div>
+
+            <div className="relative">
+              <textarea
+                id="message"
+                rows="4"
+                className="peer w-full p-4 pt-6 bg-transparent border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 text-gray-800 dark:text-white resize-none"
+                placeholder=" "
+              ></textarea>
+              <label
+                htmlFor="message"
+                className="absolute left-4 top-2 text-sm text-gray-600 dark:text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 dark:peer-focus:text-blue-400"
+              >
+                Your Message
+              </label>
+            </div>
+
+            <button className="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-600 transition duration-300 transform hover:scale-105">
+              Send Message
+            </button>
+          </form>
+        </div>
+      ),
+    },
+
+    // Design 4: Multi-Step Contact Form
+    {
+      name: "Multi-Step Contact Form",
+      code: `<div className="max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+  <div className="mb-8">
+    <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">1</div>
+        <span className="text-blue-500 font-medium">Personal Info</span>
+      </div>
+      <div className="flex-1 h-1 bg-gray-200 dark:bg-gray-700 mx-4 rounded-full">
+        <div className="h-full bg-blue-500 rounded-full" style={{width: '33%'}}></div>
+      </div>
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-400 rounded-full flex items-center justify-center text-sm font-semibold">2</div>
+        <span className="text-gray-400">Contact Details</span>
+      </div>
+      <div className="flex-1 h-1 bg-gray-200 dark:bg-gray-700 mx-4 rounded-full"></div>
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-400 rounded-full flex items-center justify-center text-sm font-semibold">3</div>
+        <span className="text-gray-400">Message</span>
+      </div>
+    </div>
+  </div>
+  
+  <div className="mb-8">
+    <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">Tell us about yourself</h2>
+    <p className="text-gray-600 dark:text-gray-400">We'd like to know who we're talking to</p>
+  </div>
+  
+  <form className="space-y-6">
+    <div className="grid grid-cols-2 gap-4">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">First Name</label>
+        <input 
+          type="text" 
+          className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+        />
+      </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Last Name</label>
+        <input 
+          type="text" 
+          className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+        />
+      </div>
+    </div>
+    
+    <div>
+      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Company (Optional)</label>
+      <input 
+        type="text" 
+        className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+      />
+    </div>
+    
+    <div>
+      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Job Title</label>
+      <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+        <option>Select your role</option>
+        <option>CEO/Founder</option>
+        <option>Manager</option>
+        <option>Developer</option>
+        <option>Designer</option>
+        <option>Other</option>
+      </select>
+    </div>
+    
+    <div className="flex justify-between pt-6">
+      <button type="button" className="px-6 py-3 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">
+        Back
+      </button>
+      <button type="button" className="px-8 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+        Next Step
+      </button>
+    </div>
+  </form>
+</div>`,
+      component: (
+        <div className="max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+          <div className="mb-8">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">
+                  1
+                </div>
+                <span className="text-blue-500 font-medium">Personal Info</span>
+              </div>
+              <div className="flex-1 h-1 bg-gray-200 dark:bg-gray-700 mx-4 rounded-full">
+                <div
+                  className="h-full bg-blue-500 rounded-full"
+                  style={{ width: "33%" }}
+                ></div>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-400 rounded-full flex items-center justify-center text-sm font-semibold">
+                  2
+                </div>
+                <span className="text-gray-400">Contact Details</span>
+              </div>
+              <div className="flex-1 h-1 bg-gray-200 dark:bg-gray-700 mx-4 rounded-full"></div>
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-400 rounded-full flex items-center justify-center text-sm font-semibold">
+                  3
+                </div>
+                <span className="text-gray-400">Message</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+              Tell us about yourself
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400">
+              We'd like to know who we're talking to
+            </p>
+          </div>
+
+          <form className="space-y-6">
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                Company (Optional)
+              </label>
+              <input
+                type="text"
+                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                Job Title
+              </label>
+              <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                <option>Select your role</option>
+                <option>CEO/Founder</option>
+                <option>Manager</option>
+                <option>Developer</option>
+                <option>Designer</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div className="flex justify-between pt-6">
+              <button
+                type="button"
+                className="px-6 py-3 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition"
+              >
+                Back
+              </button>
+              <button
+                type="button"
+                className="px-8 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+              >
+                Next Step
+              </button>
+            </div>
+          </form>
+        </div>
+      ),
+    },
+
+    // Design 5: Video Call Integration
+    {
+      name: "Video Call Integration",
+      code: `<div className="max-w-4xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Let's Schedule a Call</h2>
+    <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+      Choose your preferred way to connect with us. We're here to help you succeed.
+    </p>
+  </div>
+  
+  <div className="grid md:grid-cols-2 gap-8">
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-6 rounded-xl text-white">
+        <div className="flex items-center space-x-4 mb-4">
+          <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+            <FiVideo className="text-2xl" />
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">Video Call</h3>
+            <p className="text-blue-100">Face-to-face conversation</p>
+          </div>
+        </div>
+        <p className="text-sm text-blue-100 mb-4">
+          Perfect for detailed discussions, demos, and building relationships.
+        </p>
+        <button className="w-full py-3 bg-white/20 hover:bg-white/30 rounded-lg transition">
+          Schedule Video Call
+        </button>
+      </div>
+      
+      <div className="bg-gradient-to-r from-green-500 to-teal-600 p-6 rounded-xl text-white">
+        <div className="flex items-center space-x-4 mb-4">
+          <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+            <FiPhone className="text-2xl" />
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">Phone Call</h3>
+            <p className="text-green-100">Quick and convenient</p>
+          </div>
+        </div>
+        <p className="text-sm text-green-100 mb-4">
+          Ideal for quick questions and immediate support.
+        </p>
+        <button className="w-full py-3 bg-white/20 hover:bg-white/30 rounded-lg transition">
+          Schedule Phone Call
+        </button>
+      </div>
+      
+      <div className="bg-gradient-to-r from-orange-500 to-red-600 p-6 rounded-xl text-white">
+        <div className="flex items-center space-x-4 mb-4">
+          <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+            <FiMessageSquare className="text-2xl" />
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">Live Chat</h3>
+            <p className="text-orange-100">Instant messaging</p>
+          </div>
+        </div>
+        <p className="text-sm text-orange-100 mb-4">
+          Get immediate answers to your questions.
+        </p>
+        <button className="w-full py-3 bg-white/20 hover:bg-white/30 rounded-lg transition">
+          Start Live Chat
+        </button>
+      </div>
+    </div>
+    
+    <div>
+      <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">Or send us a message</h3>
+      <form className="space-y-4">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
+          <input 
+            type="text" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+          <input 
+            type="email" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Preferred Meeting Time</label>
+          <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+            <option>Morning (9AM - 12PM)</option>
+            <option>Afternoon (12PM - 5PM)</option>
+            <option>Evening (5PM - 8PM)</option>
+            <option>I'm flexible</option>
+          </select>
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+          <textarea 
+            rows="4" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+            placeholder="Tell us what you'd like to discuss..."
+          ></textarea>
+        </div>
+        
+        <button className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</div>`,
+      component: (
+        <div className="max-w-4xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              Let's Schedule a Call
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Choose your preferred way to connect with us. We're here to help
+              you succeed.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-6 rounded-xl text-white">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                    <FiVideo className="text-2xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold">Video Call</h3>
+                    <p className="text-blue-100">Face-to-face conversation</p>
+                  </div>
+                </div>
+                <p className="text-sm text-blue-100 mb-4">
+                  Perfect for detailed discussions, demos, and building
+                  relationships.
+                </p>
+                <button className="w-full py-3 bg-white/20 hover:bg-white/30 rounded-lg transition">
+                  Schedule Video Call
+                </button>
+              </div>
+
+              <div className="bg-gradient-to-r from-green-500 to-teal-600 p-6 rounded-xl text-white">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                    <FiPhone className="text-2xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold">Phone Call</h3>
+                    <p className="text-green-100">Quick and convenient</p>
+                  </div>
+                </div>
+                <p className="text-sm text-green-100 mb-4">
+                  Ideal for quick questions and immediate support.
+                </p>
+                <button className="w-full py-3 bg-white/20 hover:bg-white/30 rounded-lg transition">
+                  Schedule Phone Call
+                </button>
+              </div>
+
+              <div className="bg-gradient-to-r from-orange-500 to-red-600 p-6 rounded-xl text-white">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                    <FiMessageSquare className="text-2xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold">Live Chat</h3>
+                    <p className="text-orange-100">Instant messaging</p>
+                  </div>
+                </div>
+                <p className="text-sm text-orange-100 mb-4">
+                  Get immediate answers to your questions.
+                </p>
+                <button className="w-full py-3 bg-white/20 hover:bg-white/30 rounded-lg transition">
+                  Start Live Chat
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">
+                Or send us a message
+              </h3>
+              <form className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Preferred Meeting Time
+                  </label>
+                  <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                    <option>Morning (9AM - 12PM)</option>
+                    <option>Afternoon (12PM - 5PM)</option>
+                    <option>Evening (5PM - 8PM)</option>
+                    <option>I'm flexible</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    rows="4"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                    placeholder="Tell us what you'd like to discuss..."
+                  ></textarea>
+                </div>
+
+                <button className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+
+    // Design 6: File Upload Contact
+    {
+      name: "File Upload Contact",
+      code: `<div className="max-w-3xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+  <div className="text-center mb-10">
+    <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Project Inquiry</h2>
+    <p className="text-gray-600 dark:text-gray-400">
+      Share your project details and files with us. We'll get back to you within 24 hours.
+    </p>
+  </div>
+  
+  <form className="space-y-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
+        <input 
+          type="text" 
+          className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+        />
+      </div>
+      
+      <div>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+        <input 
+          type="email" 
+          className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+        />
+      </div>
+    </div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Company</label>
+        <input 
+          type="text" 
+          className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+        />
+      </div>
+      
+      <div>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Budget Range</label>
+        <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+          <option>Select budget range</option>
+          <option>$1,000 - $5,000</option>
+          <option>$5,000 - $10,000</option>
+          <option>$10,000 - $25,000</option>
+          <option>$25,000+</option>
+        </select>
+      </div>
+    </div>
+    
+    <div>
+      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Project Description</label>
+      <textarea 
+        rows="4" 
+        className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+        placeholder="Tell us about your project goals, requirements, and timeline..."
+      ></textarea>
+    </div>
+    
+    <div>
+      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Project Files</label>
+      <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg p-6 text-center hover:border-blue-500 dark:hover:border-blue-400 transition">
+        <div className="space-y-2">
+          <FiUpload className="mx-auto text-3xl text-gray-400" />
+          <div>
+            <p className="text-gray-600 dark:text-gray-400">
+              <span className="font-medium text-blue-500 hover:text-blue-600 cursor-pointer">Click to upload</span> or drag and drop
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-500">
+              PNG, JPG, PDF, DOC up to 10MB each
+            </p>
+          </div>
+        </div>
+        <input type="file" className="hidden" multiple accept=".png,.jpg,.jpeg,.pdf,.doc,.docx" />
+      </div>
+      
+      <div className="mt-3 space-y-2">
+        <div className="flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-700 rounded">
+          <div className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded flex items-center justify-center">
+              <svg className="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"/>
+              </svg>
+            </div>
+            <div>
+              <p className="text-sm font-medium text-gray-700 dark:text-gray-300">project-mockup.png</p>
+              <p className="text-xs text-gray-500">2.1 MB</p>
+            </div>
+          </div>
+          <button className="text-red-500 hover:text-red-700">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div className="flex items-center space-x-3">
+      <input type="checkbox" id="terms" className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
+      <label htmlFor="terms" className="text-sm text-gray-700 dark:text-gray-300">
+        I agree to the <a href="#" className="text-blue-500 hover:text-blue-600">Terms of Service</a> and <a href="#" className="text-blue-500 hover:text-blue-600">Privacy Policy</a>
+      </label>
+    </div>
+    
+    <button className="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition">
+      Submit Project Inquiry
+    </button>
+  </form>
+</div>`,
+      component: (
+        <div className="max-w-3xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              Project Inquiry
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400">
+              Share your project details and files with us. We'll get back to
+              you within 24 hours.
+            </p>
+          </div>
+
+          <form className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Company
+                </label>
+                <input
+                  type="text"
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Budget Range
+                </label>
+                <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                  <option>Select budget range</option>
+                  <option>$1,000 - $5,000</option>
+                  <option>$5,000 - $10,000</option>
+                  <option>$10,000 - $25,000</option>
+                  <option>$25,000+</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                Project Description
+              </label>
+              <textarea
+                rows="4"
+                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                placeholder="Tell us about your project goals, requirements, and timeline..."
+              ></textarea>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                Project Files
+              </label>
+              <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg p-6 text-center hover:border-blue-500 dark:hover:border-blue-400 transition">
+                <div className="space-y-2">
+                  <FiUpload className="mx-auto text-3xl text-gray-400" />
+                  <div>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      <span className="font-medium text-blue-500 hover:text-blue-600 cursor-pointer">
+                        Click to upload
+                      </span>{" "}
+                      or drag and drop
+                    </p>
+                    <p className="text-sm text-gray-500 dark:text-gray-500">
+                      PNG, JPG, PDF, DOC up to 10MB each
+                    </p>
+                  </div>
+                </div>
+                <input
+                  type="file"
+                  className="hidden"
+                  multiple
+                  accept=".png,.jpg,.jpeg,.pdf,.doc,.docx"
+                />
+              </div>
+
+              <div className="mt-3 space-y-2">
+                <div className="flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-700 rounded">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded flex items-center justify-center">
+                      <svg
+                        className="w-4 h-4 text-blue-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        project-mockup.png
+                      </p>
+                      <p className="text-xs text-gray-500">2.1 MB</p>
+                    </div>
+                  </div>
+                  <button className="text-red-500 hover:text-red-700">
+                    <svg
+                      className="w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-3">
+              <input
+                type="checkbox"
+                id="terms"
+                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <label
+                htmlFor="terms"
+                className="text-sm text-gray-700 dark:text-gray-300"
+              >
+                I agree to the{" "}
+                <a href="#" className="text-blue-500 hover:text-blue-600">
+                  Terms of Service
+                </a>{" "}
+                and{" "}
+                <a href="#" className="text-blue-500 hover:text-blue-600">
+                  Privacy Policy
+                </a>
+              </label>
+            </div>
+
+            <button className="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition">
+              Submit Project Inquiry
+            </button>
+          </form>
+        </div>
+      ),
+    },
+
+    // Design 7: Testimonial Contact
+    {
+      name: "Testimonial Contact",
+      code: `<div className="max-w-6xl mx-auto p-8">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">What Our Clients Say</h2>
+    <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+      Don't just take our word for it. Here's what our satisfied clients have to say about working with us.
+    </p>
+  </div>
+  
+  <div className="grid md:grid-cols-3 gap-6 mb-12">
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+      <div className="flex items-center mb-4">
+        <div className="flex text-yellow-400">
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+        </div>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 mb-4">
+        "Exceptional service and attention to detail. The team delivered exactly what we needed and more."
+      </p>
+      <div className="flex items-center">
+        <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center text-blue-500 font-semibold">
+          JS
+        </div>
+        <div className="ml-3">
+          <p className="font-semibold text-gray-800 dark:text-white">John Smith</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">CEO, Tech Corp</p>
+        </div>
+      </div>
+    </div>
+    
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+      <div className="flex items-center mb-4">
+        <div className="flex text-yellow-400">
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+        </div>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 mb-4">
+        "Professional, reliable, and results-driven. I couldn't be happier with the outcome of our project."
+      </p>
+      <div className="flex items-center">
+        <div className="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center text-green-500 font-semibold">
+          SD
+        </div>
+        <div className="ml-3">
+          <p className="font-semibold text-gray-800 dark:text-white">Sarah Davis</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">Marketing Director</p>
+        </div>
+      </div>
+    </div>
+    
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+      <div className="flex items-center mb-4">
+        <div className="flex text-yellow-400">
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+          <FiStar className="fill-current" />
+        </div>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 mb-4">
+        "Outstanding communication and project management. They made the entire process seamless."
+      </p>
+      <div className="flex items-center">
+        <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center text-purple-500 font-semibold">
+          MJ
+        </div>
+        <div className="ml-3">
+          <p className="font-semibold text-gray-800 dark:text-white">Mike Johnson</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">Startup Founder</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
+    <div className="max-w-2xl mx-auto text-center">
+      <h3 className="text-2xl font-bold mb-4">Ready to Join Our Success Stories?</h3>
+      <p className="mb-8 text-blue-100">
+        Let's discuss how we can help you achieve your goals. Get in touch today for a free consultation.
+      </p>
+      
+      <form className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input 
+            type="text" 
+            placeholder="Your Name" 
+            className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50" 
+          />
+          <input 
+            type="email" 
+            placeholder="Your Email" 
+            className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50" 
+          />
+        </div>
+        <input 
+          type="text" 
+          placeholder="Company Name" 
+          className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50" 
+        />
+        <textarea 
+          rows="3" 
+          placeholder="Tell us about your project..." 
+          className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+        ></textarea>
+        <button className="w-full py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition">
+          Get Free Consultation
+        </button>
+      </form>
+    </div>
+  </div>
+</div>`,
+      component: (
+        <div className="max-w-6xl mx-auto p-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Don't just take our word for it. Here's what our satisfied clients
+              have to say about working with us.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                </div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                "Exceptional service and attention to detail. The team delivered
+                exactly what we needed and more."
+              </p>
+              <div className="flex items-center">
+                <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center text-blue-500 font-semibold">
+                  JS
+                </div>
+                <div className="ml-3">
+                  <p className="font-semibold text-gray-800 dark:text-white">
+                    John Smith
+                  </p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    CEO, Tech Corp
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                </div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                "Professional, reliable, and results-driven. I couldn't be
+                happier with the outcome of our project."
+              </p>
+              <div className="flex items-center">
+                <div className="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center text-green-500 font-semibold">
+                  SD
+                </div>
+                <div className="ml-3">
+                  <p className="font-semibold text-gray-800 dark:text-white">
+                    Sarah Davis
+                  </p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Marketing Director
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                  <FiStar className="fill-current" />
+                </div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                "Outstanding communication and project management. They made the
+                entire process seamless."
+              </p>
+              <div className="flex items-center">
+                <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center text-purple-500 font-semibold">
+                  MJ
+                </div>
+                <div className="ml-3">
+                  <p className="font-semibold text-gray-800 dark:text-white">
+                    Mike Johnson
+                  </p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Startup Founder
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
+            <div className="max-w-2xl mx-auto text-center">
+              <h3 className="text-2xl font-bold mb-4">
+                Ready to Join Our Success Stories?
+              </h3>
+              <p className="mb-8 text-blue-100">
+                Let's discuss how we can help you achieve your goals. Get in
+                touch today for a free consultation.
+              </p>
+
+              <form className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                  />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Company Name"
+                  className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                />
+                <textarea
+                  rows="3"
+                  placeholder="Tell us about your project..."
+                  className="w-full p-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                ></textarea>
+                <button className="w-full py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition">
+                  Get Free Consultation
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+
+    // Design 8: Calendar Booking
+    {
+      name: "Calendar Booking",
+      code: `<div className="max-w-4xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+  <div className="text-center mb-10">
+    <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Book a Meeting</h2>
+    <p className="text-gray-600 dark:text-gray-400">
+      Choose a time that works for you and let's discuss your project in detail.
+    </p>
+  </div>
+  
+  <div className="grid md:grid-cols-2 gap-8">
+    <div>
+      <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">Select Date & Time</h3>
+      
+      <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg mb-6">
+        <div className="flex items-center justify-between mb-4">
+          <h4 className="text-lg font-medium text-gray-800 dark:text-white">December 2024</h4>
+          <div className="flex space-x-2">
+            <button className="p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <button className="p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <div className="grid grid-cols-7 gap-1 text-center text-sm">
+          <div className="p-2 text-gray-500 dark:text-gray-400">Sun</div>
+          <div className="p-2 text-gray-500 dark:text-gray-400">Mon</div>
+          <div className="p-2 text-gray-500 dark:text-gray-400">Tue</div>
+          <div className="p-2 text-gray-500 dark:text-gray-400">Wed</div>
+          <div className="p-2 text-gray-500 dark:text-gray-400">Thu</div>
+          <div className="p-2 text-gray-500 dark:text-gray-400">Fri</div>
+          <div className="p-2 text-gray-500 dark:text-gray-400">Sat</div>
+          
+          <div className="p-2 text-gray-400">1</div>
+          <div className="p-2 text-gray-400">2</div>
+          <div className="p-2 text-gray-400">3</div>
+          <div className="p-2 text-gray-400">4</div>
+          <div className="p-2 text-gray-400">5</div>
+          <div className="p-2 text-gray-400">6</div>
+          <div className="p-2 text-gray-400">7</div>
+          
+          <div className="p-2 text-gray-400">8</div>
+          <div className="p-2 text-gray-400">9</div>
+          <div className="p-2 text-gray-400">10</div>
+          <div className="p-2 text-gray-400">11</div>
+          <div className="p-2 text-gray-400">12</div>
+          <div className="p-2 text-gray-400">13</div>
+          <div className="p-2 text-gray-400">14</div>
+          
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">15</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">16</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">17</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">18</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">19</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">20</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">21</div>
+          
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">22</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">23</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">24</div>
+          <div className="p-2 bg-blue-500 text-white rounded">25</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">26</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">27</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">28</div>
+          
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">29</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">30</div>
+          <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">31</div>
+        </div>
+      </div>
+      
+      <div>
+        <h4 className="text-lg font-medium text-gray-800 dark:text-white mb-4">Available Times</h4>
+        <div className="grid grid-cols-3 gap-2">
+          <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">9:00 AM</button>
+          <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">10:00 AM</button>
+          <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">11:00 AM</button>
+          <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">2:00 PM</button>
+          <button className="p-2 text-sm bg-blue-500 text-white rounded">3:00 PM</button>
+          <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">4:00 PM</button>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">Meeting Details</h3>
+      
+      <div className="bg-blue-50 dark:bg-blue-900 p-4 rounded-lg mb-6">
+        <div className="flex items-center space-x-3 mb-2">
+          <FiCalendar className="text-blue-500" />
+          <span className="font-medium text-gray-800 dark:text-white">December 25, 2024</span>
+        </div>
+        <div className="flex items-center space-x-3 mb-2">
+          <FiClock className="text-blue-500" />
+          <span className="font-medium text-gray-800 dark:text-white">3:00 PM - 4:00 PM</span>
+        </div>
+        <div className="flex items-center space-x-3">
+          <FiVideo className="text-blue-500" />
+          <span className="font-medium text-gray-800 dark:text-white">Video Call (Zoom)</span>
+        </div>
+      </div>
+      
+      <form className="space-y-4">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
+          <input 
+            type="text" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+          <input 
+            type="email" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Phone Number</label>
+          <input 
+            type="tel" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Meeting Purpose</label>
+          <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+            <option>General Consultation</option>
+            <option>Project Discussion</option>
+            <option>Technical Support</option>
+            <option>Partnership Inquiry</option>
+          </select>
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Additional Notes</label>
+          <textarea 
+            rows="3" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+            placeholder="Anything specific you'd like to discuss?"
+          ></textarea>
+        </div>
+        
+        <button className="w-full py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition">
+          Confirm Meeting
+        </button>
+      </form>
+    </div>
+  </div>
+</div>`,
+      component: (
+        <div className="max-w-4xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              Book a Meeting
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400">
+              Choose a time that works for you and let's discuss your project in
+              detail.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">
+                Select Date & Time
+              </h3>
+
+              <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg mb-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="text-lg font-medium text-gray-800 dark:text-white">
+                    December 2024
+                  </h4>
+                  <div className="flex space-x-2">
+                    <button className="p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded">
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M15 19l-7-7 7-7"
+                        />
+                      </svg>
+                    </button>
+                    <button className="p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded">
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-7 gap-1 text-center text-sm">
+                  <div className="p-2 text-gray-500 dark:text-gray-400">
+                    Sun
+                  </div>
+                  <div className="p-2 text-gray-500 dark:text-gray-400">
+                    Mon
+                  </div>
+                  <div className="p-2 text-gray-500 dark:text-gray-400">
+                    Tue
+                  </div>
+                  <div className="p-2 text-gray-500 dark:text-gray-400">
+                    Wed
+                  </div>
+                  <div className="p-2 text-gray-500 dark:text-gray-400">
+                    Thu
+                  </div>
+                  <div className="p-2 text-gray-500 dark:text-gray-400">
+                    Fri
+                  </div>
+                  <div className="p-2 text-gray-500 dark:text-gray-400">
+                    Sat
+                  </div>
+
+                  <div className="p-2 text-gray-400">1</div>
+                  <div className="p-2 text-gray-400">2</div>
+                  <div className="p-2 text-gray-400">3</div>
+                  <div className="p-2 text-gray-400">4</div>
+                  <div className="p-2 text-gray-400">5</div>
+                  <div className="p-2 text-gray-400">6</div>
+                  <div className="p-2 text-gray-400">7</div>
+
+                  <div className="p-2 text-gray-400">8</div>
+                  <div className="p-2 text-gray-400">9</div>
+                  <div className="p-2 text-gray-400">10</div>
+                  <div className="p-2 text-gray-400">11</div>
+                  <div className="p-2 text-gray-400">12</div>
+                  <div className="p-2 text-gray-400">13</div>
+                  <div className="p-2 text-gray-400">14</div>
+
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    15
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    16
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    17
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    18
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    19
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    20
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    21
+                  </div>
+
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    22
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    23
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    24
+                  </div>
+                  <div className="p-2 bg-blue-500 text-white rounded">25</div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    26
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    27
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    28
+                  </div>
+
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    29
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    30
+                  </div>
+                  <div className="p-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900 rounded">
+                    31
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-medium text-gray-800 dark:text-white mb-4">
+                  Available Times
+                </h4>
+                <div className="grid grid-cols-3 gap-2">
+                  <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">
+                    9:00 AM
+                  </button>
+                  <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">
+                    10:00 AM
+                  </button>
+                  <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">
+                    11:00 AM
+                  </button>
+                  <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">
+                    2:00 PM
+                  </button>
+                  <button className="p-2 text-sm bg-blue-500 text-white rounded">
+                    3:00 PM
+                  </button>
+                  <button className="p-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-blue-50 dark:hover:bg-blue-900">
+                    4:00 PM
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">
+                Meeting Details
+              </h3>
+
+              <div className="bg-blue-50 dark:bg-blue-900 p-4 rounded-lg mb-6">
+                <div className="flex items-center space-x-3 mb-2">
+                  <FiCalendar className="text-blue-500" />
+                  <span className="font-medium text-gray-800 dark:text-white">
+                    December 25, 2024
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3 mb-2">
+                  <FiClock className="text-blue-500" />
+                  <span className="font-medium text-gray-800 dark:text-white">
+                    3:00 PM - 4:00 PM
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <FiVideo className="text-blue-500" />
+                  <span className="font-medium text-gray-800 dark:text-white">
+                    Video Call (Zoom)
+                  </span>
+                </div>
+              </div>
+
+              <form className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Meeting Purpose
+                  </label>
+                  <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                    <option>General Consultation</option>
+                    <option>Project Discussion</option>
+                    <option>Technical Support</option>
+                    <option>Partnership Inquiry</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Additional Notes
+                  </label>
+                  <textarea
+                    rows="3"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                    placeholder="Anything specific you'd like to discuss?"
+                  ></textarea>
+                </div>
+
+                <button className="w-full py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition">
+                  Confirm Meeting
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+
+    // Continue with designs 9-20...
+    // Each design would follow the same pattern with unique styling and features
+
+    // Design 9: Pricing Integration Contact
+    {
+      name: "Pricing Integration Contact",
+      code: `<div className="max-w-6xl mx-auto p-8">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Choose Your Plan</h2>
+    <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+      Select the perfect plan for your needs. Need something custom? Contact us directly.
+    </p>
+  </div>
+  
+  <div className="grid md:grid-cols-3 gap-8 mb-12">
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+      <div className="text-center mb-6">
+        <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Starter</h3>
+        <div className="text-3xl font-bold text-gray-800 dark:text-white mb-1">$29</div>
+        <p className="text-gray-600 dark:text-gray-400">per month</p>
+      </div>
+      <ul className="space-y-3 mb-6">
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">5 Projects</span>
+        </li>
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">10GB Storage</span>
+        </li>
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">Email Support</span>
+        </li>
+      </ul>
+      <button className="w-full py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+        Get Started
+      </button>
+    </div>
+    
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border-2 border-blue-500 relative">
+      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+        <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">Popular</span>
+      </div>
+      <div className="text-center mb-6">
+        <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Professional</h3>
+        <div className="text-3xl font-bold text-gray-800 dark:text-white mb-1">$79</div>
+        <p className="text-gray-600 dark:text-gray-400">per month</p>
+      </div>
+      <ul className="space-y-3 mb-6">
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">25 Projects</span>
+        </li>
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">100GB Storage</span>
+        </li>
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">Priority Support</span>
+        </li>
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">Advanced Analytics</span>
+        </li>
+      </ul>
+      <button className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+        Get Started
+      </button>
+    </div>
+    
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+      <div className="text-center mb-6">
+        <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Enterprise</h3>
+        <div className="text-3xl font-bold text-gray-800 dark:text-white mb-1">$199</div>
+        <p className="text-gray-600 dark:text-gray-400">per month</p>
+      </div>
+      <ul className="space-y-3 mb-6">
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">Unlimited Projects</span>
+        </li>
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">1TB Storage</span>
+        </li>
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">24/7 Support</span>
+        </li>
+        <li className="flex items-center space-x-3">
+          <FiCheck className="text-green-500" />
+          <span className="text-gray-600 dark:text-gray-400">Custom Integrations</span>
+        </li>
+      </ul>
+      <button className="w-full py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+        Contact Sales
+      </button>
+    </div>
+  </div>
+  
+  <div className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-8 rounded-2xl">
+    <div className="max-w-2xl mx-auto text-center">
+      <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Need a Custom Solution?</h3>
+      <p className="text-gray-600 dark:text-gray-400 mb-8">
+        Our plans don't fit your needs? Let's create a custom package that's perfect for your business.
+      </p>
+      
+      <form className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input 
+            type="text" 
+            placeholder="Your Name" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+          />
+          <input 
+            type="email" 
+            placeholder="Your Email" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+          />
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input 
+            type="text" 
+            placeholder="Company Name" 
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white" 
+          />
+          <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+            <option>Team Size</option>
+            <option>1-10 employees</option>
+            <option>11-50 employees</option>
+            <option>51-200 employees</option>
+            <option>200+ employees</option>
+          </select>
+        </div>
+        
+        <textarea 
+          rows="4" 
+          placeholder="Tell us about your specific requirements..." 
+          className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+        ></textarea>
+        
+        <button className="w-full py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition">
+          Request Custom Quote
+        </button>
+      </form>
+    </div>
+  </div>
+</div>`,
+      component: (
+        <div className="max-w-6xl mx-auto p-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              Choose Your Plan
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Select the perfect plan for your needs. Need something custom?
+              Contact us directly.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <div className="text-center mb-6">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                  Starter
+                </h3>
+                <div className="text-3xl font-bold text-gray-800 dark:text-white mb-1">
+                  $29
+                </div>
+                <p className="text-gray-600 dark:text-gray-400">per month</p>
+              </div>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    5 Projects
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    10GB Storage
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Email Support
+                  </span>
+                </li>
+              </ul>
+              <button className="w-full py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                Get Started
+              </button>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border-2 border-blue-500 relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                  Popular
+                </span>
+              </div>
+              <div className="text-center mb-6">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                  Professional
+                </h3>
+                <div className="text-3xl font-bold text-gray-800 dark:text-white mb-1">
+                  $79
+                </div>
+                <p className="text-gray-600 dark:text-gray-400">per month</p>
+              </div>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    25 Projects
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    100GB Storage
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Priority Support
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Advanced Analytics
+                  </span>
+                </li>
+              </ul>
+              <button className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                Get Started
+              </button>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <div className="text-center mb-6">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                  Enterprise
+                </h3>
+                <div className="text-3xl font-bold text-gray-800 dark:text-white mb-1">
+                  $199
+                </div>
+                <p className="text-gray-600 dark:text-gray-400">per month</p>
+              </div>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Unlimited Projects
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    1TB Storage
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    24/7 Support
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <FiCheck className="text-green-500" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Custom Integrations
+                  </span>
+                </li>
+              </ul>
+              <button className="w-full py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                Contact Sales
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-8 rounded-2xl">
+            <div className="max-w-2xl mx-auto text-center">
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+                Need a Custom Solution?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-8">
+                Our plans don't fit your needs? Let's create a custom package
+                that's perfect for your business.
+              </p>
+
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Company Name"
+                    className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                  />
+                  <select className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                    <option>Team Size</option>
+                    <option>1-10 employees</option>
+                    <option>11-50 employees</option>
+                    <option>51-200 employees</option>
+                    <option>200+ employees</option>
+                  </select>
+                </div>
+
+                <textarea
+                  rows="4"
+                  placeholder="Tell us about your specific requirements..."
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                ></textarea>
+
+                <button className="w-full py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition">
+                  Request Custom Quote
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      ),
+    },
   ];
 
   return (

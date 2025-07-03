@@ -440,6 +440,1293 @@ const NavbarShowcase = () => {
             </nav>
           ),
         },
+
+        {
+          name: "Glassmorphism",
+          code: `<nav className="bg-white/10 dark:bg-gray-800/10 backdrop-blur-lg border border-white/20 dark:border-gray-700/20 rounded-lg m-4">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-gray-900 dark:text-white">Glass</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-400 transition-colors">Home</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-400 transition-colors">About</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-400 transition-colors">Services</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-400 transition-colors">Contact</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-gray-900 dark:text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white/10 dark:bg-gray-800/10 backdrop-blur-lg border border-white/20 dark:border-gray-700/20 rounded-lg m-4">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-gray-900 dark:text-white">
+                      Glass
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-6">
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-400 transition-colors"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-400 transition-colors"
+                    >
+                      About
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-400 transition-colors"
+                    >
+                      Services
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-400 transition-colors"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-gray-900 dark:text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Gradient Border",
+          code: `<nav className="bg-white dark:bg-gray-800 relative">
+  <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-lg blur opacity-20"></div>
+  <div className="relative bg-white dark:bg-gray-800 border border-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-border rounded-lg p-0.5">
+    <div className="bg-white dark:bg-gray-800 rounded-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16 items-center">
+          <div className="flex items-center">
+            <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">GradientNav</span>
+          </div>
+          <div className="hidden md:flex items-center space-x-6">
+            <a href="#" className="text-gray-900 dark:text-white hover:text-purple-600 transition-colors">Home</a>
+            <a href="#" className="text-gray-900 dark:text-white hover:text-purple-600 transition-colors">About</a>
+            <a href="#" className="text-gray-900 dark:text-white hover:text-purple-600 transition-colors">Services</a>
+            <a href="#" className="text-gray-900 dark:text-white hover:text-purple-600 transition-colors">Contact</a>
+          </div>
+          <div className="md:hidden flex items-center">
+            <button className="text-gray-900 dark:text-white">
+              <FiMenu className="h-6 w-6" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-lg blur opacity-20"></div>
+              <div className="relative bg-white dark:bg-gray-800 border border-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-border rounded-lg p-0.5">
+                <div className="bg-white dark:bg-gray-800 rounded-lg">
+                  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex justify-between h-16 items-center">
+                      <div className="flex items-center">
+                        <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                          GradientNav
+                        </span>
+                      </div>
+                      <div className="hidden md:flex items-center space-x-6">
+                        <a
+                          href="#"
+                          className="text-gray-900 dark:text-white hover:text-purple-600 transition-colors"
+                        >
+                          Home
+                        </a>
+                        <a
+                          href="#"
+                          className="text-gray-900 dark:text-white hover:text-purple-600 transition-colors"
+                        >
+                          About
+                        </a>
+                        <a
+                          href="#"
+                          className="text-gray-900 dark:text-white hover:text-purple-600 transition-colors"
+                        >
+                          Services
+                        </a>
+                        <a
+                          href="#"
+                          className="text-gray-900 dark:text-white hover:text-purple-600 transition-colors"
+                        >
+                          Contact
+                        </a>
+                      </div>
+                      <div className="md:hidden flex items-center">
+                        <button className="text-gray-900 dark:text-white">
+                          <FiMenu className="h-6 w-6" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Neon Glow",
+          code: `<nav className="bg-gray-900 shadow-lg shadow-cyan-500/20 border-b border-cyan-500/30">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-cyan-400 drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">NeonBrand</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#" className="text-white hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.5)] transition-all">Home</a>
+        <a href="#" className="text-white hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.5)] transition-all">About</a>
+        <a href="#" className="text-white hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.5)] transition-all">Services</a>
+        <a href="#" className="text-white hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.5)] transition-all">Contact</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-gray-900 shadow-lg shadow-cyan-500/20 border-b border-cyan-500/30">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-cyan-400 drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">
+                      NeonBrand
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-6">
+                    <a
+                      href="#"
+                      className="text-white hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.5)] transition-all"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#"
+                      className="text-white hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.5)] transition-all"
+                    >
+                      About
+                    </a>
+                    <a
+                      href="#"
+                      className="text-white hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.5)] transition-all"
+                    >
+                      Services
+                    </a>
+                    <a
+                      href="#"
+                      className="text-white hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.5)] transition-all"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Pill Navigation",
+          code: `<nav className="bg-white dark:bg-gray-800 shadow-sm">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-gray-900 dark:text-white">PillNav</span>
+      </div>
+      <div className="hidden md:flex items-center bg-gray-100 dark:bg-gray-700 rounded-full p-1">
+        <a href="#" className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-full">Home</a>
+        <a href="#" className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-full">About</a>
+        <a href="#" className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-full">Services</a>
+        <a href="#" className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-full">Contact</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-gray-900 dark:text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 shadow-sm">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-gray-900 dark:text-white">
+                      PillNav
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center bg-gray-100 dark:bg-gray-700 rounded-full p-1">
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-full"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-full"
+                    >
+                      About
+                    </a>
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-full"
+                    >
+                      Services
+                    </a>
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-full"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-gray-900 dark:text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Floating Navbar",
+          code: `<div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+  <nav className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-md shadow-lg rounded-full px-6 py-3 border border-gray-200 dark:border-gray-700">
+    <div className="flex items-center space-x-8">
+      <div className="flex items-center">
+        <span className="text-lg font-bold text-gray-900 dark:text-white">Float</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Home</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">About</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Services</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Contact</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-gray-900 dark:text-white">
+          <FiMenu className="h-5 w-5" />
+        </button>
+      </div>
+    </div>
+  </nav>
+</div>`,
+          component: (
+            <div className="relative">
+              <nav className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-md shadow-lg rounded-full px-6 py-3 border border-gray-200 dark:border-gray-700">
+                <div className="flex items-center space-x-8">
+                  <div className="flex items-center">
+                    <span className="text-lg font-bold text-gray-900 dark:text-white">
+                      Float
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-6">
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      About
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Services
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-gray-900 dark:text-white">
+                      <FiMenu className="h-5 w-5" />
+                    </button>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          ),
+        },
+        {
+          name: "Minimalist Dots",
+          code: `<nav className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <div className="flex items-center space-x-1">
+          <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+          <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+        </div>
+        <span className="ml-4 text-xl font-bold text-gray-900 dark:text-white">Minimal</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-8">
+        <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">Home</a>
+        <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">About</a>
+        <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">Work</a>
+        <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">Contact</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-gray-900 dark:text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <div className="flex items-center space-x-1">
+                      <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    </div>
+                    <span className="ml-4 text-xl font-bold text-gray-900 dark:text-white">
+                      Minimal
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-8">
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                    >
+                      About
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                    >
+                      Work
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-gray-900 dark:text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Badge Navigation",
+          code: `<nav className="bg-white dark:bg-gray-800 shadow-sm">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-gray-900 dark:text-white">BadgeNav</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-4">
+        <a href="#" className="relative px-3 py-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">
+          Home
+        </a>
+        <a href="#" className="relative px-3 py-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">
+          Products
+          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+        </a>
+        <a href="#" className="relative px-3 py-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">
+          Services
+          <span className="absolute -top-1 -right-1 bg-green-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">!</span>
+        </a>
+        <a href="#" className="px-3 py-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Contact</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-gray-900 dark:text-white relative">
+          <FiMenu className="h-6 w-6" />
+          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 shadow-sm">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-gray-900 dark:text-white">
+                      BadgeNav
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-4">
+                    <a
+                      href="#"
+                      className="relative px-3 py-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#"
+                      className="relative px-3 py-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Products
+                      <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                        3
+                      </span>
+                    </a>
+                    <a
+                      href="#"
+                      className="relative px-3 py-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Services
+                      <span className="absolute -top-1 -right-1 bg-green-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                        !
+                      </span>
+                    </a>
+                    <a
+                      href="#"
+                      className="px-3 py-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-gray-900 dark:text-white relative">
+                      <FiMenu className="h-6 w-6" />
+                      <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                        3
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Icon-Heavy Navigation",
+          code: `<nav className="bg-white dark:bg-gray-800 shadow-lg">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-gray-900 dark:text-white">IconNav</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">
+          <FiUser className="h-4 w-4" />
+          <span>Profile</span>
+        </a>
+        <a href="#" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">
+          <FiShoppingCart className="h-4 w-4" />
+          <span>Cart</span>
+        </a>
+        <a href="#" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">
+          <FiHeart className="h-4 w-4" />
+          <span>Favorites</span>
+        </a>
+        <a href="#" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">
+          <FiMail className="h-4 w-4" />
+          <span>Messages</span>
+        </a>
+      </div>
+      <div className="flex items-center space-x-4">
+        <button className="p-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">
+          <FiBell className="h-5 w-5" />
+        </button>
+        <button className="md:hidden text-gray-900 dark:text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 shadow-lg">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-gray-900 dark:text-white">
+                      IconNav
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-6">
+                    <a
+                      href="#"
+                      className="flex items-center space-x-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      <FiUser className="h-4 w-4" />
+                      <span>Profile</span>
+                    </a>
+                    <a
+                      href="#"
+                      className="flex items-center space-x-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      <FiShoppingCart className="h-4 w-4" />
+                      <span>Cart</span>
+                    </a>
+                    <a
+                      href="#"
+                      className="flex items-center space-x-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      <FiHeart className="h-4 w-4" />
+                      <span>Favorites</span>
+                    </a>
+                    <a
+                      href="#"
+                      className="flex items-center space-x-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      <FiMail className="h-4 w-4" />
+                      <span>Messages</span>
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <button className="p-2 text-gray-900 dark:text-white hover:text-blue-600 transition-colors">
+                      <FiBell className="h-5 w-5" />
+                    </button>
+                    <button className="md:hidden text-gray-900 dark:text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Brutalist Style",
+          code: `<nav className="bg-black text-white border-4 border-white shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-black text-white">BRUTAL</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-8">
+        <a href="#" className="text-white hover:bg-white hover:text-black px-3 py-1 border-2 border-white transition-all font-bold">HOME</a>
+        <a href="#" className="text-white hover:bg-white hover:text-black px-3 py-1 border-2 border-white transition-all font-bold">ABOUT</a>
+        <a href="#" className="text-white hover:bg-white hover:text-black px-3 py-1 border-2 border-white transition-all font-bold">WORK</a>
+        <a href="#" className="text-white hover:bg-white hover:text-black px-3 py-1 border-2 border-white transition-all font-bold">CONTACT</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-white border-2 border-white p-1">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-black text-white border-4 border-white shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-black text-white">
+                      BRUTAL
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-8">
+                    <a
+                      href="#"
+                      className="text-white hover:bg-white hover:text-black px-3 py-1 border-2 border-white transition-all font-bold"
+                    >
+                      HOME
+                    </a>
+                    <a
+                      href="#"
+                      className="text-white hover:bg-white hover:text-black px-3 py-1 border-2 border-white transition-all font-bold"
+                    >
+                      ABOUT
+                    </a>
+                    <a
+                      href="#"
+                      className="text-white hover:bg-white hover:text-black px-3 py-1 border-2 border-white transition-all font-bold"
+                    >
+                      WORK
+                    </a>
+                    <a
+                      href="#"
+                      className="text-white hover:bg-white hover:text-black px-3 py-1 border-2 border-white transition-all font-bold"
+                    >
+                      CONTACT
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-white border-2 border-white p-1">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Neumorphism",
+          code: `<nav className="bg-gray-200 dark:bg-gray-800 shadow-[inset_-8px_-8px_16px_rgba(255,255,255,0.1),inset_8px_8px_16px_rgba(0,0,0,0.1)] dark:shadow-[inset_-8px_-8px_16px_rgba(255,255,255,0.05),inset_8px_8px_16px_rgba(0,0,0,0.3)]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-gray-800 dark:text-gray-200">Neuro</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-4">
+        <a href="#" className="px-4 py-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.1)] transition-all">Home</a>
+        <a href="#" className="px-4 py-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.1)] transition-all">About</a>
+        <a href="#" className="px-4 py-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.1)] transition-all">Services</a>
+        <a href="#" className="px-4 py-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.1)] transition-all">Contact</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="p-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)]">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-gray-200 dark:bg-gray-800 shadow-[inset_-8px_-8px_16px_rgba(255,255,255,0.1),inset_8px_8px_16px_rgba(0,0,0,0.1)] dark:shadow-[inset_-8px_-8px_16px_rgba(255,255,255,0.05),inset_8px_8px_16px_rgba(0,0,0,0.3)]">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                      Neuro
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-4">
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.1)] transition-all"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.1)] transition-all"
+                    >
+                      About
+                    </a>
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.1)] transition-all"
+                    >
+                      Services
+                    </a>
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.1)] transition-all"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="p-2 text-gray-800 dark:text-gray-200 rounded-lg shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.1)] dark:shadow-[4px_4px_8px_rgba(0,0,0,0.3),-4px_-4px_8px_rgba(255,255,255,0.05)]">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Retro Gaming",
+          code: `<nav className="bg-purple-900 text-green-400 border-4 border-green-400 font-mono shadow-[0_0_20px_rgba(34,197,94,0.5)]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-green-400 animate-pulse">RETRO.EXE</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#" className="text-green-400 hover:text-green-300 hover:bg-green-400/10 px-3 py-1 border border-green-400 transition-all">[HOME]</a>
+        <a href="#" className="text-green-400 hover:text-green-300 hover:bg-green-400/10 px-3 py-1 border border-green-400 transition-all">[ABOUT]</a>
+        <a href="#" className="text-green-400 hover:text-green-300 hover:bg-green-400/10 px-3 py-1 border border-green-400 transition-all">[GAMES]</a>
+        <a href="#" className="text-green-400 hover:text-green-300 hover:bg-green-400/10 px-3 py-1 border border-green-400 transition-all">[CONTACT]</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-green-400 border border-green-400 p-1">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-purple-900 text-green-400 border-4 border-green-400 font-mono shadow-[0_0_20px_rgba(34,197,94,0.5)]">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-green-400 animate-pulse">
+                      RETRO.EXE
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-6">
+                    <a
+                      href="#"
+                      className="text-green-400 hover:text-green-300 hover:bg-green-400/10 px-3 py-1 border border-green-400 transition-all"
+                    >
+                      [HOME]
+                    </a>
+                    <a
+                      href="#"
+                      className="text-green-400 hover:text-green-300 hover:bg-green-400/10 px-3 py-1 border border-green-400 transition-all"
+                    >
+                      [ABOUT]
+                    </a>
+                    <a
+                      href="#"
+                      className="text-green-400 hover:text-green-300 hover:bg-green-400/10 px-3 py-1 border border-green-400 transition-all"
+                    >
+                      [GAMES]
+                    </a>
+                    <a
+                      href="#"
+                      className="text-green-400 hover:text-green-300 hover:bg-green-400/10 px-3 py-1 border border-green-400 transition-all"
+                    >
+                      [CONTACT]
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-green-400 border border-green-400 p-1">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Sidebar Toggle",
+          code: `<nav className="bg-white dark:bg-gray-800 shadow-lg">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center space-x-4">
+        <button className="p-2 rounded-md text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+          <FiMenu className="h-6 w-6" />
+        </button>
+        <span className="text-xl font-bold text-gray-900 dark:text-white">Dashboard</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Analytics</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Reports</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Settings</a>
+      </div>
+      <div className="flex items-center space-x-4">
+        <button className="p-2 rounded-md text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+          <FiBell className="h-5 w-5" />
+        </button>
+        <button className="p-2 rounded-md text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+          <FiUser className="h-5 w-5" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 shadow-lg">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center space-x-4">
+                    <button className="p-2 rounded-md text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                    <span className="text-xl font-bold text-gray-900 dark:text-white">
+                      Dashboard
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-6">
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Analytics
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Reports
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Settings
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <button className="p-2 rounded-md text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <FiBell className="h-5 w-5" />
+                    </button>
+                    <button className="p-2 rounded-md text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <FiUser className="h-5 w-5" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Colorful Gradient",
+          code: `<nav className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-white">Rainbow</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#" className="text-white/90 hover:text-white hover:bg-white/10 px-3 py-2 rounded-md transition-all">Home</a>
+        <a href="#" className="text-white/90 hover:text-white hover:bg-white/10 px-3 py-2 rounded-md transition-all">About</a>
+        <a href="#" className="text-white/90 hover:text-white hover:bg-white/10 px-3 py-2 rounded-md transition-all">Services</a>
+        <a href="#" className="text-white/90 hover:text-white hover:bg-white/10 px-3 py-2 rounded-md transition-all">Contact</a>
+      </div>
+      <div className="flex items-center space-x-4">
+        <button className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-md transition-all">Get Started</button>
+        <button className="md:hidden text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-white">
+                      Rainbow
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-6">
+                    <a
+                      href="#"
+                      className="text-white/90 hover:text-white hover:bg-white/10 px-3 py-2 rounded-md transition-all"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#"
+                      className="text-white/90 hover:text-white hover:bg-white/10 px-3 py-2 rounded-md transition-all"
+                    >
+                      About
+                    </a>
+                    <a
+                      href="#"
+                      className="text-white/90 hover:text-white hover:bg-white/10 px-3 py-2 rounded-md transition-all"
+                    >
+                      Services
+                    </a>
+                    <a
+                      href="#"
+                      className="text-white/90 hover:text-white hover:bg-white/10 px-3 py-2 rounded-md transition-all"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <button className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-md transition-all">
+                      Get Started
+                    </button>
+                    <button className="md:hidden text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Tab-Style Navigation",
+          code: `<nav className="bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-gray-900 dark:text-white">TabNav</span>
+      </div>
+      <div className="hidden md:flex items-center">
+        <div className="flex space-x-1">
+          <a href="#" className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-4 py-2 rounded-t-lg border-l border-r border-t border-gray-200 dark:border-gray-700 -mb-px">Home</a>
+          <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white px-4 py-2 rounded-t-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">About</a>
+          <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white px-4 py-2 rounded-t-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Services</a>
+          <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white px-4 py-2 rounded-t-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Contact</a>
+        </div>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-gray-900 dark:text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-gray-900 dark:text-white">
+                      TabNav
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center">
+                    <div className="flex space-x-1">
+                      <a
+                        href="#"
+                        className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-4 py-2 rounded-t-lg border-l border-r border-t border-gray-200 dark:border-gray-700 -mb-px"
+                      >
+                        Home
+                      </a>
+                      <a
+                        href="#"
+                        className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white px-4 py-2 rounded-t-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                      >
+                        About
+                      </a>
+                      <a
+                        href="#"
+                        className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white px-4 py-2 rounded-t-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                      >
+                        Services
+                      </a>
+                      <a
+                        href="#"
+                        className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white px-4 py-2 rounded-t-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                      >
+                        Contact
+                      </a>
+                    </div>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-gray-900 dark:text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Compact Icon Bar",
+          code: `<nav className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-12 items-center">
+      <div className="flex items-center">
+        <span className="text-lg font-semibold text-gray-900 dark:text-white">Compact</span>
+      </div>
+      <div className="flex items-center space-x-6">
+        <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+          <FiUser className="h-4 w-4" />
+        </button>
+        <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+          <FiShoppingCart className="h-4 w-4" />
+        </button>
+        <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+          <FiHeart className="h-4 w-4" />
+        </button>
+        <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+          <FiSearch className="h-4 w-4" />
+        </button>
+        <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+          <FiMenu className="h-4 w-4" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-12 items-center">
+                  <div className="flex items-center">
+                    <span className="text-lg font-semibold text-gray-900 dark:text-white">
+                      Compact
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-6">
+                    <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                      <FiUser className="h-4 w-4" />
+                    </button>
+                    <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                      <FiShoppingCart className="h-4 w-4" />
+                    </button>
+                    <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                      <FiHeart className="h-4 w-4" />
+                    </button>
+                    <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                      <FiSearch className="h-4 w-4" />
+                    </button>
+                    <button className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                      <FiMenu className="h-4 w-4" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Breadcrumb Style",
+          code: `<nav className="bg-white dark:bg-gray-800 shadow-sm">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-gray-900 dark:text-white">Breadcrumb</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-2">
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Home</a>
+        <span className="text-gray-400">/</span>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Products</a>
+        <span className="text-gray-400">/</span>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Category</a>
+        <span className="text-gray-400">/</span>
+        <span className="text-blue-600 font-medium">Current Page</span>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-gray-900 dark:text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 shadow-sm">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-gray-900 dark:text-white">
+                      Breadcrumb
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-2">
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Home
+                    </a>
+                    <span className="text-gray-400">/</span>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Products
+                    </a>
+                    <span className="text-gray-400">/</span>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Category
+                    </a>
+                    <span className="text-gray-400">/</span>
+                    <span className="text-blue-600 font-medium">
+                      Current Page
+                    </span>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-gray-900 dark:text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Split Navigation",
+          code: `<nav className="bg-white dark:bg-gray-800 shadow-lg">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="flex items-center space-x-8">
+        <span className="text-xl font-bold text-gray-900 dark:text-white">Split</span>
+        <div className="hidden md:flex items-center space-x-6">
+          <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Home</a>
+          <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">About</a>
+        </div>
+      </div>
+      <div className="flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-6">
+          <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Services</a>
+          <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Contact</a>
+        </div>
+        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">Sign Up</button>
+        <button className="md:hidden text-gray-900 dark:text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 shadow-lg">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="flex items-center space-x-8">
+                    <span className="text-xl font-bold text-gray-900 dark:text-white">
+                      Split
+                    </span>
+                    <div className="hidden md:flex items-center space-x-6">
+                      <a
+                        href="#"
+                        className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                      >
+                        Home
+                      </a>
+                      <a
+                        href="#"
+                        className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                      >
+                        About
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-6">
+                    <div className="hidden md:flex items-center space-x-6">
+                      <a
+                        href="#"
+                        className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                      >
+                        Services
+                      </a>
+                      <a
+                        href="#"
+                        className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                      >
+                        Contact
+                      </a>
+                    </div>
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+                      Sign Up
+                    </button>
+                    <button className="md:hidden text-gray-900 dark:text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
+        {
+          name: "Centered Logo",
+          code: `<nav className="bg-white dark:bg-gray-800 shadow-sm">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Home</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">About</a>
+      </div>
+      <div className="flex items-center">
+        <span className="text-xl font-bold text-gray-900 dark:text-white">CENTERED</span>
+      </div>
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Services</a>
+        <a href="#" className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors">Contact</a>
+      </div>
+      <div className="md:hidden flex items-center">
+        <button className="text-gray-900 dark:text-white">
+          <FiMenu className="h-6 w-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>`,
+          component: (
+            <nav className="bg-white dark:bg-gray-800 shadow-sm">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                  <div className="hidden md:flex items-center space-x-6">
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      About
+                    </a>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-xl font-bold text-gray-900 dark:text-white">
+                      CENTERED
+                    </span>
+                  </div>
+                  <div className="hidden md:flex items-center space-x-6">
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Services
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-900 dark:text-white hover:text-blue-600 transition-colors"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                  <div className="md:hidden flex items-center">
+                    <button className="text-gray-900 dark:text-white">
+                      <FiMenu className="h-6 w-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          ),
+        },
       ],
     },
     {

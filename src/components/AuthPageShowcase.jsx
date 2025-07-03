@@ -2393,9 +2393,8 @@ export default DarkElegantAuth;`,
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300 ${
-        darkMode ? "dark bg-gray-900" : "bg-gray-50"
-      }`}
+      className={`min-h-screen p-8 transition-colors duration-300 dark:bg-gray-900 dark:text-white bg-gray-50 text-gray-900
+      `}
     >
       <div className="max-w-7xl mx-auto p-8">
         {/* Header with Dark Mode Toggle */}
@@ -2408,17 +2407,6 @@ export default DarkElegantAuth;`,
           >
             Auth Page Universe
           </motion.h1>
-          <button
-            onClick={toggleDarkMode}
-            className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow duration-300"
-            aria-label="Toggle dark mode"
-          >
-            {darkMode ? (
-              <FiSun className="w-6 h-6 text-yellow-500" />
-            ) : (
-              <FiMoon className="w-6 h-6 text-gray-600" />
-            )}
-          </button>
         </header>
 
         {/* Introduction */}
